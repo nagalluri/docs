@@ -29,7 +29,8 @@
   },
   "logo": {
     "light": "/logo/lum_logo_light.png",
-    "dark": "/logo/lum_logo_dark.png"
+    "dark": "/logo/lum_logo_dark.png",
+    "href": "https://useluminary.com"
   },
   "navbar": {
     "links": [
