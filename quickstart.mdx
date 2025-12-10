@@ -1,80 +1,62 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "How to edit videos faster using Luminary"
 ---
 
-## Get started in three steps
+## Step 1: Import your Assets
 
-Get your documentation site running locally and make your first customization.
+Once you've created a new project, you will need import any new project assets to the asset library. You can navigate to the asset library by
+clicking on the "Folder" icon in the navigation bar.
 
-### Step 1: Set up your local environment
+<Frame>
+  <img src="/images/navigation_edited.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+In the asset library view, click on "Import" and select any video or audio files to be added to the project. 
 
-### Step 2: Deploy your changes
+For all of the imported video files, you will need to specify whether the video is A-roll or B-roll.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+- **A-roll**: Videos that contain the primary voiceove (i.e. talking head). These videos will be transcribed when added to the text editor but will not be processed for search.
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+- **B-roll**: Videos that contain footage that will be added on top of the primary voiceover. These videos will be processed for clip search, allowing you to quickly search
+for specific scenes from your raw footage. To improve the quality of clip search, you are encouraged to provide descriptive context that will be used by our AI to analyze the footage. 
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+<Frame>
+  <img src="/images/import.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-### Step 3: Go live
+## Step 2: Edit your voiceover
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+After importing your assets, you can now navigate back to the editor view and add either the audio or video voiceover(s) for your video. Click the "Add Voiceover" button in the text editor video
+to select your voiceover content. The audio will then be transcribed into the text editor. 
 
-## Next steps
+You can now select and delete text in the text editor to make cuts to your timeline!
 
-Now that you have your docs running, explore these key features:
+<Frame>
+  <img src="/images/deletetext.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<CardGroup cols={2}>
+## Step 3: Add your b-roll footage
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+Once your voiceover has been edited, you can now add any b-roll footage to your voiceover. 
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+You can add b-roll footage by selecting the text in the text editor and adding b-roll to selected section
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+<Frame>
+  <img src="/images/addbrolleditor.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+Or, you can right-click and drag in the timeline to add b-roll for the selected duration
 
-</CardGroup>
+<Frame>
+  <img src="/images/addbrolltimeline.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+## Step 4: Export your video
+
+Once your edit is complete you can either
+- Export to video as an MP4 video file
+- Export as XML file to be used in Adobe Premiere Pro, DaVinci Resolve, or Final Cut Pro (Note: In DaVinci Resolve, you will have to import the XML file as a timeline via
+File > Import > Timeline)
+
+Congrats on editing your first video using Luminary!
