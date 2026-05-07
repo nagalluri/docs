@@ -28,8 +28,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg",
+    "light": "/logo/daydream.svg",
+    "dark": "/logo/daydream.svg",
     "href": "https://www.daydreamvideo.com"
   },
   "navbar": {
