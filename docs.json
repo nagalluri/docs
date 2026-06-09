@@ -13,16 +13,25 @@
       {
         "group": "Overview",
         "pages": [
-          "index"
+          "index",
+          "getting-started"
         ]
       },
       {
-        "group": "Workflow",
+        "group": "Features",
         "pages": [
-          "workflow/step1",
-          "workflow/step2",
-          "workflow/step3",
-          "workflow/step4"
+          "features/remove-bad-takes-and-silences",
+          "features/add-clips-by-description",
+          "features/captions",
+          "features/motion-graphics",
+          "features/exporting"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "guides/connect-claude-code-codex",
+          "guides/connect-mcp"
         ]
       }
     ]
