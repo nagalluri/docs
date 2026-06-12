@@ -1,0 +1,66 @@
+---
+title: "Claude: Terminal vs Native Mode"
+sidebarTitle: "Claude: Terminal vs Native Mode"
+description: "Daydream can run Claude two ways: Terminal Mode uses your normal Claude subscription limits, and Native Mode uses a separate monthly usage credit. Here's how each one is billed and which to choose."
+---
+
+Daydream can edit your project with Claude in two ways, and they draw on your Claude plan differently:
+
+- **Terminal Mode** runs Claude in a Terminal view and uses your **normal Claude subscription usage limits**.
+- **Native Mode** runs Claude in a native Daydream view and uses a **separate monthly usage credit** that doesn't count against your subscription limits.
+
+This guide explains the difference so you can pick the right one. It only applies to Claude — for setup steps (installing the CLI and logging in), see [Connect Claude Code & Codex](/guides/connect-claude-code-codex).
+
+## What changed on June 15, 2026
+
+Starting **June 15, 2026**, Anthropic changed how your Claude subscription is used by third-party apps like Daydream ([details from Anthropic](https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan)).
+
+- Your **subscription usage limits stay the same** and remain reserved for interactive Claude Code (terminal and IDE) and web chat. This is what **Terminal Mode** uses.
+- Third-party apps that connect through the Claude Agent SDK now draw from a **separate monthly usage credit** that **no longer counts toward your plan's usage limits**. This is what **Native Mode** uses.
+
+<Note>
+  The monthly usage credit is tied to your plan tier (Pro, Max, Team, and Enterprise plans each include a credit). It's **per-user**, **refreshes with your billing cycle**, and **doesn't roll over**. Customers using an API key instead of a Claude plan don't receive a credit.
+</Note>
+
+## Your two options
+
+| | **Terminal Mode** | **Native Mode** |
+| --- | --- | --- |
+| What you see | Embedded terminal view | Native chat view |
+| Bills against | Your normal Claude subscription limits | Your monthly Claude usage credit |
+| Best for | Staying on subscription limits | Keeping the same chat view |
+
+You can switch between modes in **Agent Settings**. The chat will update on your next message. 
+
+<Frame>
+  <img src="/images/claude-mode-toggle.png" alt="Daydream Agent Settings showing the Terminal Mode and Native Mode options for Claude" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Terminal Mode
+
+Terminal Mode runs an embedded Claude session run in Terminal.
+
+<Frame>
+  <img src="/images/terminal-mode.png" alt="Daydream chat running in Terminal Mode, powered by the Claude Code CLI" style={{ borderRadius: '0.5rem', width: '100%', maxWidth: '260px', display: 'block', margin: '0 auto' }} />
+</Frame>
+
+You can also choose to type directly in the terminal by toggling **Type in terminal**.
+
+<Frame>
+  <img src="/images/type-in-terminal.png" alt="The Type in terminal toggle above Daydream's chat input" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Native Mode
+
+Native Mode runs Claude session in the background to give you a more native look and feel.
+
+<Frame>
+  <img src="/images/native-mode.png" alt="Daydream chat running in Native Mode, using the monthly Claude usage credit" style={{ borderRadius: '0.5rem', width: '100%', maxWidth: '260px', display: 'block', margin: '0 auto' }} />
+</Frame>
+
+## Which should I choose?
+
+- **Choose Terminal Mode** if you want to continue to use Daydream with your Claude subscription usage.
+- **Choose Native Mode** if you want to continue using the existing native look and feel.
+
+You can change your mind anytime in **Agent Settings**.
