@@ -31,6 +31,7 @@
         "group": "Guides",
         "pages": [
           "guides/connect-claude-code-codex",
+          "guides/terminal-vs-native",
           "guides/connect-mcp"
         ]
       }
