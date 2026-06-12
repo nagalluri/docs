@@ -71,3 +71,18 @@ If the path from `which` isn't one of these, reinstall the CLI with its official
 ## Alternative: Connect to Daydream from your own terminal
 
 The steps above let you use Claude Code or Codex inside Daydream's chat panel. Alternatively, you can connect to Daydream directly from wherever you already use Claude Code or Codex. For more details, see [How to connect to Daydream via MCP](/guides/connect-mcp).
+
+## Troubleshooting: Connecting to Fable 5
+
+Fable 5 is Claude's newest frontier model. You select it from the model menu at the bottom of the chat panel (next to **Enter to send**), where it sits at the top of the list, above Opus, Sonnet, and Haiku.
+
+If **Fable 5** is greyed out and labeled **Requires Claude update**, your Claude Code CLI is older than the required version **2.1.170**. To enable Fable 5:
+
+<Steps>
+  <Step title="Update the CLI">
+    Open your Terminal app, type `claude update`, and press Enter.
+  </Step>
+  <Step title="Relaunch Daydream">
+    Quit Daydream and reopen it so it re-detects your updated CLI. Fable 5 is now selectable in the model menu.
+  </Step>
+</Steps>
