@@ -1,12 +1,12 @@
 ---
 title: "How to connect Daydream to Claude Code or Codex"
 sidebarTitle: "Connect Claude Code & Codex"
-description: "Use Claude Code or Codex to edit your videos inside Daydream's built-in chat. Daydream detects the agent on your machine automatically."
+description: "Use Claude Code or Codex to edit your videos inside Daydream's built-in chat. Just sign in with your Claude or ChatGPT account."
 ---
 
-Daydream can edit your project using Claude Code or Codex from its built-in chat. Ask for an edit in plain language and the agent does it while you stay in control.
+Daydream can edit videos using the in-app chat that's connected to Claude Code or Codex. Ask for an edit in plain language and the agent will edit your timeline directly.
 
-Daydream detects these agents automatically if their CLIs are installed and you're logged in. Open **Agent Settings** to see the status of each agent.
+Connecting Claude Code and Codex to Daydream is simple and easy. Daydream sets up Claude Code and Codex automatically in the background, so the only step you perform is signing in with your Claude or ChatGPT account.
 
 <Frame>
   <img src="/images/agent-settings.png" alt="Daydream Agent Settings showing the Claude Code and Codex status cards" style={{ borderRadius: '0.5rem' }} />
@@ -14,57 +14,54 @@ Daydream detects these agents automatically if their CLIs are installed and you'
 
 ## Connect an agent
 
+When you first launch Daydream, you will see a welcome screen that shows you your connection status to Claude Code and Codex. You can also open it any time under **Agent Settings**, which has a tab for each agent (Claude Code / Codex).
+
 <Steps>
-  <Step title="Install the CLI (Command Line Interface)">
-    Install the [Claude Code](https://code.claude.com/docs/en/quickstart) or [Codex](https://developers.openai.com/codex/cli) CLI on your machine.
-
-    <Note>Codex requires version **0.45.0 or newer**. Update with `npm install -g @openai/codex@latest`.</Note>
-  </Step>
   <Step title="Log in">
-    Log in to Claude Code and Codex to connect them to Daydream.
+    Click **▷ Log in** on the card. Your browser opens to sign in:
 
-    - **Claude Code**: Follow [Log in to your account](https://code.claude.com/docs/en/quickstart#step-2-log-in-to-your-account) in the Claude Code quickstart.
-    - **Codex**: Open your Terminal app, type `codex login`, and press Enter. Then follow the prompts to sign in.
+    - **Claude Code**: sign in with your Claude account.
+    - **Codex**: sign in with your ChatGPT account.
+
+    Claude may show **Paste your login code here (if prompted)**. Paste the code from the browser into that field in the app.
   </Step>
-  <Step title="Relaunch Daydream app">
-    Quit your Daydream app and then reopen it. Then, create a new project or open an existing one.
-  </Step>
-  <Step title="Open Agent Settings and refresh">
-    Each agent shows a status:
-
-    | Status | Meaning |
-    | --- | --- |
-    | **Connected** | CLI installed and logged in. Ready to use in chat. |
-    | **Not installed** | CLI not found. Install it, then refresh. |
-    | **Not logged in** | CLI installed but not authenticated. Use the **Open Terminal** button and follow the above login instructions. |
-    | **Couldn't verify status** | Detection didn't complete. Refresh. If it keeps failing, quit and reopen Daydream. |
-
-    Use the **Refresh** button on a card to re-check after installing or logging in.
+  <Step title="Connected">
+    The card flips to **Connected** showing **Signed in as your@email.com · your plan**. Once you have at least one agent connected,
+    you should be good to go.
   </Step>
 </Steps>
 
-Once an agent shows **Connected**, you're all set. Claude Code or Codex can now edit your videos from Daydream's chat panel.
+## Agent status
 
-## If an agent shows "Not installed"
+Each card shows a status:
 
-First, quit Daydream, open it again, and click **Refresh**. Daydream re-checks for the CLI installation each time it starts.
+| Status | Meaning / action |
+| --- | --- |
+| **Connected** — "Signed in as …" | Ready to use. **▷ Switch account** re-runs sign-in if you want a different account. |
+| **Not Connected** — "Sign in with your Claude/ChatGPT account…" | Click **▷ Log in**. |
+| **"Couldn't set up … automatically. Retry or set it up manually"** | Click **Retry** (requires internet). Manual setup means installing the CLI yourself. See [Set up manually](#set-up-manually). |
+| **"Couldn't check …'s status. Try refreshing"** | Click the refresh icon. Logging in again also resolves it. |
 
-If it still shows **Not installed**, the CLI may be in a location Daydream cannot access. To see where it is installed, run this in a terminal:
+## Troubleshooting
 
-```bash
-which claude   # or: which codex
-```
+**Setup fails or stalls.** Check your internet connection and click **Retry**. On restrictive networks such as corporate proxies, automatic setup may fail; the manual-install fallback below works there. If you already had Claude Code or Codex installed and working, you can keep using it as-is regardless. In some instances, restarting the app may also help.
 
-Daydream looks for the CLI on your `PATH` and in these locations:
+**Browser didn't open during login.** Click the highlighted link shown in the login panel inside the app.
 
-- `~/.local/bin/`
-- `~/bin/`
-- `/opt/homebrew/bin/`
-- `/usr/local/bin/`
-- `/usr/bin/`
-- Your nvm or fnm Node install (`~/.nvm/versions/node/<version>/bin/`, `~/.fnm/node-versions/<version>/installation/bin/`)
+**Finished signing in but the card didn't update.** Click back into the Daydream window (it re-checks automatically), or hit the refresh icon on the card.
 
-If the path from `which` isn't one of these, reinstall the CLI with its official installer so it lands in a standard location, then quit and reopen Daydream.
+**Work or organization accounts** (Claude Team/Enterprise, SSO) are fully supported. Sign in with your work email and the card will show your organization and plan.
+
+**Chat says "Connect an agent to start editing."** Open Agent Settings and complete the **Log in** step for either agent.
+
+## Set up manually
+
+If automatic setup can't complete (for example, on a restrictive network), install the CLI yourself:
+
+- **Claude Code**: follow the [Claude Code quickstart](https://code.claude.com/docs/en/quickstart).
+- **Codex**: follow the [Codex CLI docs](https://developers.openai.com/codex/cli).
+
+Once the CLI is installed and you're logged in, Daydream picks it up automatically.
 
 ## Alternative: Connect to Daydream from your own terminal
 
