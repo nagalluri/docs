@@ -37,8 +37,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/daydream.svg",
-    "dark": "/logo/daydream.svg",
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
     "href": "https://www.daydreamvideo.com"
   },
   "navbar": {
