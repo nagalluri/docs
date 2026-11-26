@@ -18,13 +18,22 @@ To make motion graphics in Daydream, describe what you want in chat, like "a low
 
 > End the video with our logo animating in. Use logo.png from my assets.
 
-{/* Visual: loops of a title, a lower third, a chart and a marker highlight */}
+<Columns cols={2}>
+<Frame caption="A lower third the AI built from one sentence.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/graphics-lower-third.mp4" aria-label="A lower third the AI built from one sentence."></video>
+</Frame>
+<Frame caption="An end card with the words building in one by one.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/graphics-end-card.mp4" aria-label="An end card with the words building in one by one."></video>
+</Frame>
+</Columns>
 
 ## The AI plans first, then builds
 
 For anything more than a simple title, the AI first describes what it's going to make: what's on screen, how it moves, and how long it lasts. It waits for you to approve or change the plan before building. That way you're not waiting on a graphic you didn't want.
 
-{/* Visual: still of the plan the AI shows for approval */}
+<Frame caption="The plan the AI shows before building a graphic.">
+  <img src="/images/guide/still-graphic-plan.png" alt="The AI describing its plan for an end card, covering timing, look and motion, before building it" style={{ maxWidth: '480px', margin: '0 auto' }} />
+</Frame>
 
 It builds one graphic at a time. For a sequence, like a title, then three tip cards, then an end card, it plans and builds the first, lets you see it, then moves to the next.
 

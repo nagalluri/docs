@@ -18,7 +18,17 @@ To add a zoom in effect in Daydream, ask the AI something like "punch in when I 
 
 > Slide the title in from the left and fade it out at the end.
 
-{/* Visual: loops of a punch-in, a slow push-in, and a punch-in with motion blur */}
+<Columns cols={3}>
+<Frame caption="Punch-in">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/zoom-punch-in.mp4" aria-label="Punch-in"></video>
+</Frame>
+<Frame caption="Slow push-in">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/zoom-push-in.mp4" aria-label="Slow push-in"></video>
+</Frame>
+<Frame caption="Punch-in with motion blur">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/zoom-punch-in-motion-blur.mp4" aria-label="Punch-in with motion blur"></video>
+</Frame>
+</Columns>
 
 A **punch-in** is a quick zoom that snaps in and settles, good for emphasis in talking-head videos. A **push-in** is slow and steady, good for drawing attention over a few seconds. If you don't say which, the AI picks based on how you describe it.
 

@@ -16,7 +16,14 @@ If a look isn't in Daydream's [built-in effects](/style/effects), describe it an
 
 > Turn the B-roll into pixel art.
 
-{/* Visual: loops of two or three custom looks on the same clip */}
+<Columns cols={2}>
+<Frame caption="Make this clip look like an old CRT TV.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/custom-crt.mp4" aria-label="Make this clip look like an old CRT TV."></video>
+</Frame>
+<Frame caption="Wash the background in blue and keep me in normal color.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/custom-background-wash.mp4" aria-label="Wash the background in blue and keep me in normal color."></video>
+</Frame>
+</Columns>
 
 The AI writes the effect, checks that it runs smoothly on your computer, and applies it. If it's too heavy for smooth playback, the AI makes a lighter version. Then it looks at a frame of the result before telling you it's done.
 
@@ -52,7 +59,9 @@ Daydream doesn't have a transitions menu, but the AI can make any transition you
 
 To build a transition, the AI overlaps the next clip with the current one on the track above and blends between them. For a plain fade, it uses opacity instead, as described in [add zooms and camera moves](/style/zoom-effects#fades-and-crossfades).
 
-{/* Visual: loop of a custom transition */}
+<Frame caption="A custom glowing wipe from the speaker to B-roll.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/custom-transition.mp4" aria-label="A custom glowing wipe from the speaker to B-roll."></video>
+</Frame>
 
 ## Effects that move with the music
 
@@ -64,7 +73,9 @@ Custom effects can react to the song on your timeline: hitting on every beat, or
 
 > Flash and shake the frame on the drop.
 
-{/* Visual: loop with sound of an effect pulsing on the beat */}
+<Frame caption="A zoom punch and flash on every beat, written as a custom effect.">
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/custom-beat-pulse.mp4" aria-label="A zoom punch and flash on every beat, written as a custom effect."></video>
+</Frame>
 
 See [edit to the beat](/edit/edit-to-the-beat) for how Daydream finds the beats.
 

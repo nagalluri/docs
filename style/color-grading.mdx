@@ -26,7 +26,13 @@ Then:
 
 > Desaturate the yellows in this clip.
 
-{/* Visual: before/after stills of a correction and a look on the same clip */}
+<Frame caption="Before and after asking for a warm, filmic look.">
+  <img src="/images/guide/color-before-after-warm.jpg" alt="The same frame before and after a warm, filmic grade" style={{ maxWidth: '540px', margin: '0 auto' }} />
+</Frame>
+
+<Frame caption="Before and after asking for teal shadows and orange highlights.">
+  <img src="/images/guide/color-before-after-teal-orange.jpg" alt="The same frame before and after a teal and orange grade" style={{ maxWidth: '540px', margin: '0 auto' }} />
+</Frame>
 
 ## Log footage
 
@@ -43,15 +49,15 @@ For most cameras, Daydream reads the file's metadata, sets the camera profile wh
 
 You can mix log and normal footage in one timeline. Each clip keeps its own camera profile.
 
-{/* Visual: before/after stills of log footage developed */}
-
 ## LUTs
 
 To use a LUT, tell the AI where the `.cube` file is ("apply ~/LUTs/Kodak.cube at 60% strength"), or add it in the **Look** section of the **Color** panel. A strength of 40 to 70% is a good place to start for creative LUTs that look too heavy.
 
 If you have a conversion LUT made for log footage, like "S-Log3 to Rec.709", say so. The AI applies it to the raw log image so it isn't converted twice.
 
-{/* Visual: before/after stills of a LUT at full and partial strength */}
+<Frame caption="No LUT, the LUT at 50% strength, and at 100%.">
+  <img src="/images/guide/color-lut-strength.jpg" alt="The same frame with no LUT, a LUT at 50% strength and the same LUT at 100%" style={{ maxWidth: '700px', margin: '0 auto' }} />
+</Frame>
 
 ## Match clips and grade a whole video
 
@@ -76,6 +82,10 @@ Select one video clip and open the **Color** panel:
 - **Color wheels**: lift, gamma and gain
 - **Curves**: tone curves, plus hue curves to change one color at a time
 - **Look**: split toning and LUTs
+
+<Frame caption="The Color panel, with the AI's grade on the sliders and the waveform below.">
+  <img src="/images/guide/still-color-panel.png" alt="The Color panel with white balance and tone sliders, a waveform scope, and the graded clip in the preview" />
+</Frame>
 
 Waveform, parade and vectorscope scopes sit in the same panel. Hold the compare button to see the clip without your grade. The preview shows the change, and your export is identical.
 
