@@ -8,27 +8,47 @@ To make a vertical video in Daydream, choose **File > Switch to Vertical Video (
 
 Daydream supports two shapes: horizontal 16:9 and vertical 9:16. Square and 4:5 aren't available yet.
 
-{/* Visual: still of the same edit at 16:9 and at 9:16 side by side */}
+<Frame caption="The same shot in a horizontal project and in a vertical one, where the sides are cropped.">
+  <img src="/images/guide/still-vertical-compare.jpg" alt="The same shot of hands typing on a laptop, shown at 16:9 and at 9:16 with the sides cropped" />
+</Frame>
 
 ## Start a vertical project
 
-1. Create a new project.
-2. Choose **File > Switch to Vertical Video (9:16)** and confirm.
-3. Edit as usual.
+<Steps>
+  <Step title="Create a new project" />
+  <Step title="Switch to vertical">
+    Choose **File > Switch to Vertical Video (9:16)** and confirm.
+  </Step>
+  <Step title="Edit as usual" />
+</Steps>
 
 Switching first matters because captions and graphics are designed for the frame they're made in. If you build a title in a horizontal project and switch afterwards, Daydream reframes it, but a graphic designed for a wide frame rarely looks as good squeezed into a tall one.
 
 ## Turn a horizontal video into a vertical one
 
-Switching changes the project itself, so duplicate it first if you want to keep the horizontal version.
+<Warning>
+Switching changes the project itself. Duplicate it first if you want to keep the horizontal version.
+</Warning>
 
-1. Right-click the project's tab at the top of the window and choose **Duplicate**.
-2. In the copy, choose **File > Switch to Vertical Video (9:16)**.
-3. Check each shot. In a vertical frame, horizontal footage fills the height and the sides are cropped, centered by default. If someone ends up half out of frame, ask the AI to fix it:
+<Steps>
+  <Step title="Duplicate the project">
+    Right-click the project's tab at the top of the window and choose **Duplicate**.
+  </Step>
+  <Step title="Switch the copy to vertical">
+    In the copy, choose **File > Switch to Vertical Video (9:16)**.
+  </Step>
+  <Step title="Check each shot">
+    In a vertical frame, horizontal footage fills the height and the sides are cropped, centered by default. If someone ends up half out of frame, ask the AI to fix it:
 
-> Keep me centered in every shot.
+    <Prompt description={"Keep me centered in every shot."} actions={["copy"]}>
+    Keep me centered in every shot.
+    </Prompt>
 
-> Move the B-roll at 0:42 so the product is in frame.
+    <Prompt description={"Move the B-roll at 0:42 so the product is in frame."} actions={["copy"]}>
+    Move the B-roll at 0:42 so the product is in frame.
+    </Prompt>
+  </Step>
+</Steps>
 
 You can also select a clip and change its **Position** in **Properties**.
 

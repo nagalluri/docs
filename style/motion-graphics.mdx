@@ -8,23 +8,44 @@ To make motion graphics in Daydream, describe what you want in chat, like "a low
 
 ## Ask for a graphic
 
-> Add a title card at the start that says "5 Tips for Better Sleep".
+<Columns cols={2}>
+<Prompt description={"Add a title card at the start that says \"5 Tips for Better Sleep\"."} actions={["copy"]}>
+Add a title card at the start that says "5 Tips for Better Sleep".
+</Prompt>
 
-> Add a lower third with my name, Maya Chen, and "Founder, Lumen" when I first appear.
+<Prompt description={"Add a lower third with my name, Maya Chen, and \"Founder, Lumen\" when I first appear."} actions={["copy"]}>
+Add a lower third with my name, Maya Chen, and "Founder, Lumen" when I first appear.
+</Prompt>
 
-> Animate a bar chart showing revenue going from $10k to $80k over four quarters.
+<Prompt description={"Animate a bar chart showing revenue going from $10k to $80k over four quarters."} actions={["copy"]}>
+Animate a bar chart showing revenue going from $10k to $80k over four quarters.
+</Prompt>
 
-> Highlight the words "save 2 hours a day" as I say them, like a marker swipe.
+<Prompt description={"Highlight the words \"save 2 hours a day\" as I say them, like a marker swipe."} actions={["copy"]}>
+Highlight the words "save 2 hours a day" as I say them, like a marker swipe.
+</Prompt>
 
-> End the video with our logo animating in. Use logo.png from my assets.
+<Prompt description={"End the video with our logo animating in. Use logo.png from my assets."} actions={["copy"]}>
+End the video with our logo animating in. Use logo.png from my assets.
+</Prompt>
+</Columns>
 
-{/* Visual: loops of a title, a lower third, a chart and a marker highlight */}
+<Columns cols={2}>
+<Frame caption="A lower third the AI built from one sentence.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/graphics-lower-third.mp4" aria-label="A lower third the AI built from one sentence."></video>
+</Frame>
+<Frame caption="An end card with the words building in one by one.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/graphics-end-card.mp4" aria-label="An end card with the words building in one by one."></video>
+</Frame>
+</Columns>
 
 ## The AI plans first, then builds
 
 For anything more than a simple title, the AI first describes what it's going to make: what's on screen, how it moves, and how long it lasts. It waits for you to approve or change the plan before building. That way you're not waiting on a graphic you didn't want.
 
-{/* Visual: still of the plan the AI shows for approval */}
+<Frame caption="The plan the AI shows before building a graphic.">
+  <img src="/images/guide/still-graphic-plan.png" alt="The AI describing its plan for an end card, covering timing, look and motion, before building it" style={{ maxWidth: '480px', margin: '0 auto' }} />
+</Frame>
 
 It builds one graphic at a time. For a sequence, like a title, then three tip cards, then an end card, it plans and builds the first, lets you see it, then moves to the next.
 
@@ -34,11 +55,17 @@ When it's done, it checks the graphic over your actual footage: whether text is 
 
 Ask for what you'd change:
 
-> Make the title bigger and slow down the entrance.
+<Prompt description={"Make the title bigger and slow down the entrance."} actions={["copy"]}>
+Make the title bigger and slow down the entrance.
+</Prompt>
 
-> Change the colors to match our brand: navy and orange.
+<Prompt description={"Change the colors to match our brand: navy and orange."} actions={["copy"]}>
+Change the colors to match our brand: navy and orange.
+</Prompt>
 
-> The lower third covers my face. Move it to the left.
+<Prompt description={"The lower third covers my face. Move it to the left."} actions={["copy"]}>
+The lower third covers my face. Move it to the left.
+</Prompt>
 
 Or select the graphic on the timeline to move, trim and resize it like any other clip. To change its text or colors, ask the AI.
 
@@ -46,7 +73,9 @@ Or select the graphic on the timeline to move, trim and resize it like any other
 
 Graphics can use images from your library, like logos, screenshots and photos. Mention the file by name or with **@**. Images stay linked to their file on your computer, so don't move or delete them while you're still using the graphic.
 
+<Warning>
 Graphics can also include video, like a picture-in-picture card or a side-by-side comparison. Use this sparingly: every video inside a graphic slows down playback and export, a lot on Windows. For effects on your own footage, like blurring the background or putting text behind you, use [effects](/style/background-and-text-behind) instead.
+</Warning>
 
 ## Put graphics behind you or on the beat
 

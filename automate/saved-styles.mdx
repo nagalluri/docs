@@ -6,33 +6,51 @@ description: "Save a caption style or a graphic like an intro or lower third in 
 
 To reuse a caption style or a graphic in Daydream, ask the AI to save it ("save this caption style as Bold Yellow"). It goes into your **Memory** panel, and any project can use it after that.
 
+<Badge color="blue">Creator</Badge> <Badge color="purple">Pro</Badge>
+
+<Info>
+Saving caption styles and graphics is part of the Creator and Pro plans. Creator saves 3 of each, Pro has no plan limit. See [plans and limits](/help/plans-and-limits).
+</Info>
+
 ## Save a caption style
 
 Once your captions look the way you want:
 
-> Save this caption style as Bold Yellow.
+<Prompt description={"Save this caption style as Bold Yellow."} actions={["copy"]}>
+Save this caption style as Bold Yellow.
+</Prompt>
 
 To use it in another project:
 
-> Use my Bold Yellow captions.
+<Prompt description={"Use my Bold Yellow captions."} actions={["copy"]}>
+Use my Bold Yellow captions.
+</Prompt>
 
 Or open **Memory**, go to **Captions**, and apply it from there. Every caption in the project switches to the saved style.
 
 ## Save a graphic
 
-> Save this lower third as "Name tag".
+<Prompt description={"Save this lower third as \"Name tag\"."} actions={["copy"]}>
+Save this lower third as "Name tag".
+</Prompt>
 
-> Save the outro so I can use it on future videos.
+<Prompt description={"Save the outro so I can use it on future videos."} actions={["copy"]}>
+Save the outro so I can use it on future videos.
+</Prompt>
 
 To use it later:
 
-> Add my Name tag lower third when I first appear, with "Sam Lee, Head of Product".
+<Prompt description={"Add my Name tag lower third when I first appear, with \"Sam Lee, Head of Product\"."} actions={["copy"]}>
+Add my Name tag lower third when I first appear, with "Sam Lee, Head of Product".
+</Prompt>
 
 Or open **Memory**, go to **Graphics**, and drag it onto the timeline.
 
 A saved graphic is a copy of the original, text included. When the AI adds it to a new video, it updates the text for that video. The saved version doesn't change.
 
-{/* Visual: still of the Memory panel's Graphics tab with a few saved graphics */}
+<Frame caption="Saved graphics in the Memory panel. Drag one onto the timeline to use it.">
+  <img src="/images/guide/still-memory-graphics.png" alt="The Memory panel on the Graphics tab, showing three saved graphics including a lower third and an end card" style={{ maxWidth: '480px', margin: '0 auto' }} />
+</Frame>
 
 ### Graphics with images
 
@@ -44,7 +62,9 @@ Graphics that include your own video footage can't be saved.
 
 Pair a saved style with a [preference](/automate/preferences) and you won't have to ask each time:
 
-> From now on, always use my Bold Yellow captions.
+<Prompt description={"From now on, always use my Bold Yellow captions."} actions={["copy"]}>
+From now on, always use my Bold Yellow captions.
+</Prompt>
 
 Or bundle several together in a [recipe](/automate/recipes).
 

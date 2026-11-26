@@ -8,30 +8,40 @@ To sync a separate mic or a second camera with your video in Daydream, put both 
 
 ## Sync a mic or second camera
 
-1. Import both recordings and put them on the timeline. Rough positions are fine.
-2. Ask:
+<Steps>
+  <Step title="Put both recordings on the timeline">
+    Import them and place them on the timeline. Rough positions are fine.
+  </Step>
+  <Step title="Ask the AI to sync them">
+    <Prompt description={"Sync my lav recording to the camera and link them."} actions={["copy"]}>
+    Sync my lav recording to the camera and link them.
+    </Prompt>
 
-> Sync my lav recording to the camera and link them.
-
-> Line up the B camera with the A camera.
+    <Prompt description={"Line up the B camera with the A camera."} actions={["copy"]}>
+    Line up the B camera with the A camera.
+    </Prompt>
+  </Step>
+</Steps>
 
 The clip you name as the main one stays where it is, and the others move to match it. Linking means a cut, trim or transcript edit later applies to all of them, so they never drift apart. Measuring takes a few seconds for short clips and a few minutes for long 4K files.
 
 Once they're synced, you'll usually want only one audio source. Ask the AI to "mute the camera audio", or click the eye button on that audio track, which hides everything on that track.
 
-{/* Visual: still of the timeline with the two recordings' waveforms before and after syncing */}
-
 ## Picture-in-picture: screen recording and face cam
 
 For a tutorial or a reaction video, you can put a small face cam over a full-screen recording:
 
-> Put the face cam in the bottom right corner over the screen recording, sync it by audio, and link them.
+<Prompt description={"Put the face cam in the bottom right corner over the screen recording, sync it by audio, and link them."} actions={["copy"]}>
+Put the face cam in the bottom right corner over the screen recording, sync it by audio, and link them.
+</Prompt>
 
 The AI syncs the two recordings, shrinks the face cam, positions it, and links everything. Because they're linked, cutting silences from your narration removes the same moment from the screen recording too.
 
 To give the screen recording a rounded, shadowed window look, ask for the window frame effect. See [add effects](/style/effects).
 
-{/* Visual: loop of a picture-in-picture result, screen recording with a face cam in the corner */}
+<Frame caption="A face cam in the corner of a screen recording, framed with the window frame effect.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/pip-face-cam.mp4" aria-label="A face cam in the corner of a screen recording, framed with the window frame effect."></video>
+</Frame>
 
 ## When syncing doesn't work
 

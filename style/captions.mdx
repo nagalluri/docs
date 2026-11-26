@@ -13,15 +13,29 @@ You need a transcript first (see [edit by transcript](/edit/remove-silences)). T
 - click the captions button in the timeline toolbar (its tooltip says **Generate captions from transcript**), or
 - ask the AI:
 
-> Add captions.
+<Prompt description={"Add captions."} actions={["copy"]}>
+Add captions.
+</Prompt>
 
-> Add captions, one sentence per line.
+<Prompt description={"Add captions, one sentence per line."} actions={["copy"]}>
+Add captions, one sentence per line.
+</Prompt>
 
-> Add captions, three words at a time.
+<Prompt description={"Add captions, three words at a time."} actions={["copy"]}>
+Add captions, three words at a time.
+</Prompt>
+
+<Frame caption="One click on the captions button. The spoken word is highlighted as it plays.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/ui-captions.mp4" aria-label="One click on the captions button. The spoken word is highlighted as it plays."></video>
+</Frame>
 
 By default, each caption holds up to 6 words. You can ask for full sentences, splits at natural pauses like commas, or any number of words.
 
-If you cut more of the video after adding captions, ask the AI to "regenerate the captions", or use the regenerate button in the timeline toolbar (**Regenerate captions from current transcript**). Regenerating rebuilds every caption from the current transcript, so text you edited on individual captions is replaced.
+If you cut more of the video after adding captions, ask the AI to "regenerate the captions", or use the regenerate button in the timeline toolbar (**Regenerate captions from current transcript**).
+
+<Warning>
+Regenerating rebuilds every caption from the current transcript, so text you edited on individual captions is replaced.
+</Warning>
 
 ## Change how captions look
 
@@ -43,15 +57,28 @@ To move or resize captions, drag them in the preview. With **Apply to all captio
 
 For anything the settings don't cover, describe the look:
 
-> One word at a time, big and bold, with each word popping in.
+<Prompt description={"One word at a time, big and bold, with each word popping in."} actions={["copy"]}>
+One word at a time, big and bold, with each word popping in.
+</Prompt>
 
-> White text on a black pill, with the current word in yellow.
+<Prompt description={"White text on a black pill, with the current word in yellow."} actions={["copy"]}>
+White text on a black pill, with the current word in yellow.
+</Prompt>
 
-> Podcast-clip captions: big, centered, two lines at most, with a soft shadow.
+<Prompt description={"Podcast-clip captions: big, centered, two lines at most, with a soft shadow."} actions={["copy"]}>
+Podcast-clip captions: big, centered, two lines at most, with a soft shadow.
+</Prompt>
 
 The AI writes a custom caption style for your project, with its own animation. Ask for changes the same way ("smaller", "less bounce", "move them higher").
 
-{/* Visual: loops of the default caption style and two or three custom styles, same clip each time */}
+<Columns cols={2}>
+<Frame caption="The default style, with the spoken word in yellow.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/captions-default.mp4" aria-label="The default style, with the spoken word in yellow."></video>
+</Frame>
+<Frame caption="A custom style the AI wrote: one word at a time, popping in, keywords in orange.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/captions-custom.mp4" aria-label="A custom style the AI wrote: one word at a time, popping in, keywords in orange."></video>
+</Frame>
+</Columns>
 
 To reuse a style in other projects, save it. See [save caption styles and graphics](/automate/saved-styles).
 

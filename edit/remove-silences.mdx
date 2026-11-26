@@ -18,11 +18,17 @@ Daydream detects the language automatically. Filler words like "um" and "uh" are
 
 Ask in the chat:
 
-> Cut the silences and any bad takes.
+<Prompt description={"Cut the silences and any bad takes."} actions={["copy"]}>
+Cut the silences and any bad takes.
+</Prompt>
 
-> Remove the ums and uhs, but keep the pacing natural.
+<Prompt description={"Remove the ums and uhs, but keep the pacing natural."} actions={["copy"]}>
+Remove the ums and uhs, but keep the pacing natural.
+</Prompt>
 
-> Remove the part where I talk about shipping, from "anyway" to "the next thing".
+<Prompt description={"Remove the part where I talk about shipping, from \"anyway\" to \"the next thing\"."} actions={["copy"]}>
+Remove the part where I talk about shipping, from "anyway" to "the next thing".
+</Prompt>
 
 Unless you tell it otherwise, the AI:
 
@@ -33,7 +39,9 @@ Unless you tell it otherwise, the AI:
 
 If it isn't sure about a section, it leaves it and tells you at the end.
 
-{/* Visual: transcript with removed words struck through and the timeline closing the gaps */}
+<Frame caption="Asking the AI to cut the silences and bad takes. The timeline shrinks from 1:38 to 26 seconds.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/ui-ai-cut.mp4" aria-label="Asking the AI to cut the silences and bad takes. The timeline shrinks from 1:38 to 26 seconds."></video>
+</Frame>
 
 ### Tighter or looser cuts
 
@@ -50,6 +58,10 @@ You can also give exact numbers: "leave 0.2 seconds before and after each cut." 
 ## Review what was cut
 
 Turn on **Show cuts** at the top of the **Transcript** panel. Removed words stay in the text, struck through, so you can read exactly what's gone. Turn it off to read only what's left.
+
+<Frame caption="Turning on Show cuts. Everything the AI removed stays in the text, struck through.">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/ui-show-cuts.mp4" aria-label="Turning on Show cuts. Everything the AI removed stays in the text, struck through."></video>
+</Frame>
 
 To bring something back, select the struck-through words and press **Delete** again, or click the restore button that appears over them (**Restore selection**). **Cmd+Z** (**Ctrl+Z** on Windows) undoes the last cut.
 

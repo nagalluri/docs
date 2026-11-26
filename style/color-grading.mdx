@@ -10,23 +10,45 @@ To color grade in Daydream, select your clip and describe what you want: "fix th
 
 Color correction fixes problems from the shoot, like exposure or white balance, so the footage looks natural and consistent. Color grading comes after and gives it a look or a mood. Ask for them in that order.
 
-> Fix the white balance.
+<Prompt description={"Fix the white balance."} actions={["copy"]}>
+Fix the white balance.
+</Prompt>
 
-> My face is underexposed. Brighten it up without blowing out the window.
+<Prompt description={"My face is underexposed. Brighten it up without blowing out the window."} actions={["copy"]}>
+My face is underexposed. Brighten it up without blowing out the window.
+</Prompt>
 
-> Remove the green cast.
+<Prompt description={"Remove the green cast."} actions={["copy"]}>
+Remove the green cast.
+</Prompt>
 
 Then:
 
-> Give it a warm, filmic look.
+<Columns cols={2}>
+<Prompt description={"Give it a warm, filmic look."} actions={["copy"]}>
+Give it a warm, filmic look.
+</Prompt>
 
-> Teal shadows and orange highlights, but keep my skin natural.
+<Prompt description={"Teal shadows and orange highlights, but keep my skin natural."} actions={["copy"]}>
+Teal shadows and orange highlights, but keep my skin natural.
+</Prompt>
 
-> Make the greens greener.
+<Prompt description={"Make the greens greener."} actions={["copy"]}>
+Make the greens greener.
+</Prompt>
 
-> Desaturate the yellows in this clip.
+<Prompt description={"Desaturate the yellows in this clip."} actions={["copy"]}>
+Desaturate the yellows in this clip.
+</Prompt>
+</Columns>
 
-{/* Visual: before/after stills of a correction and a look on the same clip */}
+<Frame caption="Before and after asking for a warm, filmic look.">
+  <img src="/images/guide/color-before-after-warm.jpg" alt="The same frame before and after a warm, filmic grade" style={{ maxWidth: '540px', margin: '0 auto' }} />
+</Frame>
+
+<Frame caption="Before and after asking for teal shadows and orange highlights.">
+  <img src="/images/guide/color-before-after-teal-orange.jpg" alt="The same frame before and after a teal and orange grade" style={{ maxWidth: '540px', margin: '0 auto' }} />
+</Frame>
 
 ## Log footage
 
@@ -43,21 +65,25 @@ For most cameras, Daydream reads the file's metadata, sets the camera profile wh
 
 You can mix log and normal footage in one timeline. Each clip keeps its own camera profile.
 
-{/* Visual: before/after stills of log footage developed */}
-
 ## LUTs
 
 To use a LUT, tell the AI where the `.cube` file is ("apply ~/LUTs/Kodak.cube at 60% strength"), or add it in the **Look** section of the **Color** panel. A strength of 40 to 70% is a good place to start for creative LUTs that look too heavy.
 
 If you have a conversion LUT made for log footage, like "S-Log3 to Rec.709", say so. The AI applies it to the raw log image so it isn't converted twice.
 
-{/* Visual: before/after stills of a LUT at full and partial strength */}
+<Frame caption="No LUT, the LUT at 50% strength, and at 100%.">
+  <img src="/images/guide/color-lut-strength.jpg" alt="The same frame with no LUT, a LUT at 50% strength and the same LUT at 100%" style={{ maxWidth: '700px', margin: '0 auto' }} />
+</Frame>
 
 ## Match clips and grade a whole video
 
-> Match the color of this clip to the one before it.
+<Prompt description={"Match the color of this clip to the one before it."} actions={["copy"]}>
+Match the color of this clip to the one before it.
+</Prompt>
 
-> Apply this look to every clip.
+<Prompt description={"Apply this look to every clip."} actions={["copy"]}>
+Apply this look to every clip.
+</Prompt>
 
 Grades belong to each clip, so when you apply one look across a video, every clip keeps its own camera profile and only the look is shared. To match two clips, the AI compares their scopes and moves one toward the other.
 
@@ -76,6 +102,10 @@ Select one video clip and open the **Color** panel:
 - **Color wheels**: lift, gamma and gain
 - **Curves**: tone curves, plus hue curves to change one color at a time
 - **Look**: split toning and LUTs
+
+<Frame caption="The Color panel, with the AI's grade on the sliders and the waveform below.">
+  <img src="/images/guide/still-color-panel.png" alt="The Color panel with white balance and tone sliders, a waveform scope, and the graded clip in the preview" />
+</Frame>
 
 Waveform, parade and vectorscope scopes sit in the same panel. Hold the compare button to see the clip without your grade. The preview shows the change, and your export is identical.
 

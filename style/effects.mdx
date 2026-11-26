@@ -8,7 +8,42 @@ To add an effect in Daydream, ask for it by name: "add film grain", "make this c
 
 Effects are added through the AI. There's no effects panel yet, so to change one, ask ("less grain", "turn off the vignette").
 
-{/* Visual: loops of each animated effect below on the same clip; still for vignette */}
+<Columns cols={3}>
+<Frame caption="Film grain">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-film-grain.mp4" aria-label="Film grain"></video>
+</Frame>
+<Frame caption="Blur">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-clip-blur.mp4" aria-label="Blur"></video>
+</Frame>
+<Frame caption="Privacy blur on a face">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-privacy-blur.mp4" aria-label="Privacy blur on a face"></video>
+</Frame>
+<Frame caption="Window frame">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-window-frame.mp4" aria-label="Window frame"></video>
+</Frame>
+<Frame caption="VHS">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-vhs.mp4" aria-label="VHS"></video>
+</Frame>
+<Frame caption="Glitch Cut">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-glitch-cut.mp4" aria-label="Glitch Cut"></video>
+</Frame>
+<Frame caption="Dither">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-dither.mp4" aria-label="Dither"></video>
+</Frame>
+<Frame caption="Fish Eye">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-fish-eye.mp4" aria-label="Fish Eye"></video>
+</Frame>
+<Frame caption="Water">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-water.mp4" aria-label="Water"></video>
+</Frame>
+<Frame caption="Fluted Glass">
+  <video autoPlay muted loop playsInline className="w-full rounded-xl" src="/images/guide/fx-fluted-glass.mp4" aria-label="Fluted Glass"></video>
+</Frame>
+</Columns>
+
+<Frame caption="Without and with a vignette.">
+  <img src="/images/guide/fx-vignette.jpg" alt="The same frame without and with a vignette" style={{ maxWidth: '540px', margin: '0 auto' }} />
+</Frame>
 
 ## Effects you can ask for
 
@@ -36,9 +71,13 @@ Ask for a look by name ("add the VHS look to the intro") and adjust it the same 
 
 ## Blur a face or license plate
 
-> Blur the face of the person on the right.
+<Prompt description={"Blur the face of the person on the right."} actions={["copy"]}>
+Blur the face of the person on the right.
+</Prompt>
 
-> Pixelate the logo on the laptop.
+<Prompt description={"Pixelate the logo on the laptop."} actions={["copy"]}>
+Pixelate the logo on the laptop.
+</Prompt>
 
 The AI selects the thing you mean on the first frame and follows it through the clip. Selecting by pointing sometimes grabs more than you meant, like the whole laptop instead of the logo, so the AI checks a frame and narrows it down. Following an object takes a few minutes per minute of footage, analyzed on your computer.
 
