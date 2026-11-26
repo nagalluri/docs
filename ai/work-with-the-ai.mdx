@@ -1,0 +1,99 @@
+---
+title: "How to edit video with Claude or ChatGPT"
+sidebarTitle: "How to work with the AI"
+description: "How the AI edits your Daydream timeline, how to write prompts that get the edit you want, how to point it at clips and words, and which Claude or ChatGPT model to pick."
+---
+
+In Daydream, you edit with Claude or ChatGPT by describing what you want in the chat panel. The AI makes the change on your timeline while you watch, and every change it makes is a normal edit you can undo, adjust by hand, or ask it to redo.
+
+{/* Visual: one AI turn sped up, the prompt typed in chat and the timeline changing as the AI works */}
+
+## What the AI can see and do
+
+The AI works with the same project you do. It can read:
+
+- the transcript of anything you've transcribed, word by word, with timings
+- descriptions of your B-roll, written when you imported it, so it can find "the shot of the beach at sunset" without watching everything again
+- any frame of your footage, and the finished frame as it'll look in your export
+- the timeline: every clip, where it sits, and what's applied to it
+- color scopes, so it can measure exposure and white balance instead of guessing
+
+With that, it can cut, arrange, add B-roll, caption, grade, add effects and graphics, mix audio and export. The pages under [Edit your video](/edit/import-footage) and [Style your video](/style/captions) cover each of those.
+
+It also checks its own work. After a change, it usually looks at frames from the result before telling you it's done.
+
+## What it can't do yet
+
+- Generate video, music or sound effects. It works with what you import.
+- Use a transitions menu. There isn't one, but it can make fades and custom transitions. See [custom effects and transitions](/style/custom-effects-and-transitions).
+- Make square or 4:5 videos. Projects are 16:9 or 9:16.
+- Tell speakers apart in a transcript.
+
+## How to write prompts that work
+
+Say what you want, where, and how much. The AI does better with a specific request than a vague one, the same way a human editor would.
+
+| Instead of | Try |
+|---|---|
+| "Make it better" | "Cut the silences, then tighten the first 10 seconds so it starts on the hook" |
+| "Add some B-roll" | "Add B-roll over the part where I talk about pricing, one shot per sentence" |
+| "Make the captions nicer" | "One word at a time, white, bold, with the current word in yellow" |
+| "Fix the color" | "My face looks too orange in the first clip. Make the skin tones more natural" |
+
+A few habits help:
+
+- Point to a place. Timestamps ("at 0:42"), a phrase ("when I say 'the price'") or a clip all work.
+- Do big changes in steps. "Cut the silences" first, then "add B-roll", then "add captions". You can check each one before the next.
+- Say what's wrong. "The title covers my face" gets fixed faster than "move the title".
+- Ask it to explain. "What did you change?" or "Why did you cut that part?" both work.
+
+## Point the AI at specific clips, words and files
+
+You don't have to describe everything in words.
+
+- Type **@** to mention a video or image from your library by name.
+- Select clips on the timeline before you send a message. The AI gets them as context, so "make these black and white" knows which clips you mean.
+- Select words in the transcript the same way, then ask about them ("cut this sentence", "add B-roll here").
+- Drag files into the chat or paste an image, like a reference frame for a look you want or a logo. You can attach up to 20 files at once.
+
+## Review, stop and undo
+
+The edit happens on the timeline as the AI works, so you can watch it. If it's heading the wrong way, click **Stop generating** or press **Esc**.
+
+You can type your next message while the AI is still working. It's queued and sent when the current one finishes.
+
+Every change the AI makes can be undone with **Cmd+Z** (**Ctrl+Z** on Windows), one step at a time, up to 50 steps back. Or ask: "undo that last change".
+
+For motion graphics, the AI first describes its plan and waits for you to approve it before building anything. That saves you from waiting on a graphic you didn't want.
+
+## Choose a model
+
+Pick the model from the menu under the chat box. Claude and ChatGPT each have four:
+
+| Claude | ChatGPT | When to use it |
+|---|---|---|
+| Fable 5.2 (Most intelligent) | GPT-6 Astra (Most capable) | Motion graphics, complex looks, long multi-step edits |
+| Opus 5.5 (Best for complex tasks) | GPT-6.1 Sol (Best for complex tasks) | The default. Good at everything |
+| Sonnet 5.5 (Best for daily use) | GPT-6.1 Terra (Balanced speed and quality) | Everyday cuts and captions, a bit faster |
+| Haiku 5.5 (Cheapest and fastest) | GPT-6 Luna (Fast and efficient) | Quick, small changes |
+
+The same menu has an **Effort** setting that controls how long the model thinks before acting. **Default** is right for most edits.
+
+Faster models use less of your Claude or ChatGPT plan's usage. A chat stays with one provider, so to switch between Claude and ChatGPT, start a new chat.
+
+## Chats and history
+
+- Click **New chat** when you move on to a different task. A fresh chat is faster and less likely to mix up old instructions.
+- **Previous chats** brings back an earlier conversation for this project.
+- Long chats are compacted automatically, so you can keep going without starting over.
+- **Cmd+L** (**Ctrl+L** on Windows) shows or hides the chat panel.
+
+## Usage
+
+Every action the AI takes in your project, like adding a clip or checking a frame, counts as one tool call. The free plan includes 100 tool calls a month, and paid plans are unlimited. Your Claude or ChatGPT plan has its own usage limits on top of that. [Plans and limits](/help/plans-and-limits) explains both.
+
+## Related pages
+
+- [Make your first video](/first-video)
+- [Remember your preferences](/automate/preferences)
+- [Connect other AI tools](/ai/connect-other-ai-tools)

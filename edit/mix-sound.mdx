@@ -1,0 +1,53 @@
+---
+title: "How to duck music under your voice and remove breaths"
+sidebarTitle: "Mix your sound"
+description: "Mix audio in Daydream: lower music under your voice, quiet breaths and mouth clicks, add fades, and balance tracks, by asking Claude or ChatGPT or by hand."
+---
+
+To lower music under your voice in Daydream, ask the AI ("put the music 12 dB under my voice") or drag down the music track's fader. The AI can also quiet breaths and mouth clicks, add fades, and dip the music only while you're talking.
+
+## Ask the AI
+
+> Put the music 12 dB under my voice.
+
+> Lower the music while I'm talking and bring it back up in the gaps.
+
+> Clean up the breathing sounds in my voiceover.
+
+> Fade the music out over the last 3 seconds.
+
+> The B-roll at 0:30 is too loud. Turn it down.
+
+{/* Visual: before/after audio pair, music under voice */}
+
+## Breaths and mouth clicks
+
+Cutting breaths out often makes speech sound rushed, so the AI lowers the volume during each one instead. It finds them in the gaps between words in your transcript and dips the audio there with a short, smooth ramp, about 20 dB quieter.
+
+The dips show up as points on the clip's volume line, so you can drag any of them or remove one you don't want. Asking again on the same section won't make it any quieter.
+
+{/* Visual: before/after audio pair, breaths lowered */}
+
+## Mix by hand
+
+**A clip's volume:** select the clip and open **Properties**. **Levels** has **Volume** (from -60 to +20 dB), and **Fades** has **Fade in** and **Fade out**.
+
+**The volume line on a clip:** drag the line on an audio clip up or down. Hold **Shift** for finer steps. **Cmd**-click (**Ctrl**-click) the line to add a point, so you can dip one moment. Double-click a point to remove it, or double-click the line to reset it to 0 dB.
+
+**A whole track:** click **Show audio meters** in the timeline toolbar. Each audio track gets a fader from -36 to +12 dB and a level meter. Double-click a fader to reset it to 0 dB. The fader affects every clip on the track, which makes it the easy way to set music against voice.
+
+Keep the loudest track peaking below 0 dB. If a meter turns red, that part will distort in the export.
+
+## Listening while you edit
+
+**M** mutes the preview, and **Option+Up** or **Option+Down** (**Alt** on Windows) changes how loud the preview plays. These only change what you hear, not the export.
+
+## Limits
+
+Daydream doesn't have noise reduction, EQ or a music or sound-effect library yet. For noisy recordings, clean the audio in another app before importing.
+
+## Related pages
+
+- [Edit to the beat](/edit/edit-to-the-beat)
+- [Sync audio and cameras](/edit/sync-audio)
+- [Edit by transcript](/edit/remove-silences)

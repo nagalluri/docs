@@ -11,27 +11,67 @@
   "navigation": {
     "groups": [
       {
-        "group": "Overview",
+        "group": "Get started",
         "pages": [
           "index",
-          "getting-started"
+          "install",
+          "connect-claude-chatgpt",
+          "first-video",
+          "vertical-video"
         ]
       },
       {
-        "group": "Features",
+        "group": "Work with the AI",
         "pages": [
-          "features/remove-bad-takes-and-silences",
-          "features/add-clips-by-description",
-          "features/captions",
-          "features/motion-graphics",
-          "features/exporting"
+          "ai/work-with-the-ai",
+          "ai/connect-other-ai-tools"
         ]
       },
       {
-        "group": "Guides",
+        "group": "Edit your video",
         "pages": [
-          "guides/connect-claude-code-codex",
-          "guides/connect-mcp"
+          "edit/import-footage",
+          "edit/remove-silences",
+          "edit/timeline",
+          "edit/sync-audio",
+          "edit/add-b-roll",
+          "edit/edit-to-the-beat",
+          "edit/mix-sound"
+        ]
+      },
+      {
+        "group": "Style your video",
+        "pages": [
+          "style/captions",
+          "style/motion-graphics",
+          "style/zoom-effects",
+          "style/color-grading",
+          "style/background-and-text-behind",
+          "style/effects",
+          "style/custom-effects-and-transitions"
+        ]
+      },
+      {
+        "group": "Finish",
+        "pages": [
+          "finish/export",
+          "finish/export-xml"
+        ]
+      },
+      {
+        "group": "Automate future edits",
+        "pages": [
+          "automate/preferences",
+          "automate/saved-styles",
+          "automate/recipes"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "help/troubleshooting",
+          "help/plans-and-limits",
+          "help/keyboard-shortcuts"
         ]
       }
     ]
@@ -56,19 +96,51 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
-    "socials": {
-
+    "socials": {}
+  },
+  "redirects": [
+    {
+      "source": "/getting-started",
+      "destination": "/first-video"
+    },
+    {
+      "source": "/features/remove-bad-takes-and-silences",
+      "destination": "/edit/remove-silences"
+    },
+    {
+      "source": "/features/add-clips-by-description",
+      "destination": "/edit/add-b-roll"
+    },
+    {
+      "source": "/features/captions",
+      "destination": "/style/captions"
+    },
+    {
+      "source": "/features/motion-graphics",
+      "destination": "/style/motion-graphics"
+    },
+    {
+      "source": "/features/exporting",
+      "destination": "/finish/export"
+    },
+    {
+      "source": "/guides/connect-claude-code-codex",
+      "destination": "/connect-claude-chatgpt"
+    },
+    {
+      "source": "/guides/connect-mcp",
+      "destination": "/ai/connect-other-ai-tools"
     }
-  }
+  ]
 }

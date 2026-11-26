@@ -1,0 +1,67 @@
+---
+title: "How to edit your first video with AI in Daydream"
+sidebarTitle: "Make your first video"
+description: "Go from raw footage to a finished video in about 10 minutes: import, transcribe, cut silences with Claude or ChatGPT, add B-roll and captions, then export."
+---
+
+This walkthrough takes you from raw footage to an exported video in about 10 minutes. You'll use the steps you'll repeat on almost every edit: import, transcribe, cut, add B-roll, caption and export.
+
+You'll need Daydream [installed](/install) with [Claude or ChatGPT connected](/connect-claude-chatgpt), a clip of you talking, and a few clips of B-roll.
+
+<Steps>
+  <Step title="Create a project">
+    On the start screen, click **New Project**, give it a name, and create it.
+
+    Every new project starts horizontal (16:9). If you're making a Reel, Short or TikTok, switch now with **File > Switch to Vertical Video (9:16)**. Switching before you edit means captions and graphics are built for the right shape from the start. More on this in [make a vertical video](/vertical-video).
+  </Step>
+  <Step title="Import your footage">
+    In the **Assets** panel, click **Import**, or drag your files onto it.
+
+    - Put the clip of you talking under **Voiceover / Talking Head**. Daydream transcribes these.
+    - Put your B-roll under **Footage / Images / Music**. The AI watches these clips in the background so it can find shots for you later.
+
+    Click **Import**.
+
+    {/* Visual: import window with a talking-head clip in the top box and B-roll in the bottom box */}
+  </Step>
+  <Step title="Transcribe your talking-head clip">
+    Open the **Transcript** panel and click **Transcribe Video** (or **Transcribe Voiceover** if it's an audio file). Pick your clip.
+
+    When it's done, the transcript appears in the panel and the clip lands on the timeline. Short clips take a few seconds. An hour of footage can take a few minutes.
+  </Step>
+  <Step title="Cut the silences and bad takes">
+    In the chat on the right, ask:
+
+    > Cut the silences and any bad takes.
+
+    Watch the timeline while the AI works. It reads the transcript, removes the pauses, keeps the last attempt of anything you said twice, and closes the gaps.
+
+    When it's done, turn on **Show cuts** in the **Transcript** panel to see what it removed, struck through. Click a struck-through word and press **Delete** to bring it back, or press **Cmd+Z** (**Ctrl+Z** on Windows) to undo the whole cut.
+
+    {/* Visual: transcript with removed words struck through and the timeline closing the gaps */}
+  </Step>
+  <Step title="Add B-roll">
+    Ask for B-roll the way you'd describe it to a person:
+
+    > Add B-roll over the part where I talk about my morning routine.
+
+    The AI picks shots from the footage you imported and places them on the track above your talking-head clip. If you want a different shot, say which one ("use the coffee shot instead").
+  </Step>
+  <Step title="Add captions">
+    Click the captions button in the timeline toolbar (its tooltip says **Generate captions from transcript**), or ask the AI to "add captions". Captions appear on their own track, timed to your words.
+
+    To change how they look, ask for a style ("one word at a time, the current word in yellow") or select a caption and edit its style in **Properties**. [Add captions](/style/captions) has more.
+  </Step>
+  <Step title="Export">
+    Click **Export**, choose **Video**, and pick **TikTok/Reels** (or **YouTube** for a horizontal video). Click **Export to file**, choose where to save it, and wait for **Export complete**.
+  </Step>
+</Steps>
+
+That's a finished video. From here, most people tweak by asking for small changes ("tighten the pacing in the first 10 seconds", "zoom in when I say the price") and fixing the odd thing by hand.
+
+## Related pages
+
+- [How to work with the AI](/ai/work-with-the-ai)
+- [Remove silences, pauses and filler words](/edit/remove-silences)
+- [Add B-roll](/edit/add-b-roll)
+- [Export a video](/finish/export)

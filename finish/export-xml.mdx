@@ -1,0 +1,61 @@
+---
+title: "How to export XML to Premiere Pro, DaVinci Resolve, Final Cut Pro or CapCut"
+sidebarTitle: "Send to Premiere, Resolve, Final Cut or CapCut"
+description: "Send your Daydream edit to Premiere Pro, DaVinci Resolve, Final Cut Pro or CapCut as an editable timeline, and see which parts stay editable and which are rendered."
+---
+
+To finish your edit in another editor, click **Export** and choose **Premiere Pro**, **DaVinci Resolve**, **Final Cut Pro** or **CapCut**. Daydream writes a timeline that opens there with your cuts intact, and renders the things that editor can't rebuild, like color grades and graphics, into video files that come with it.
+
+You can also ask the AI: "export this to Premiere and save it on my Desktop."
+
+## Export settings
+
+Depending on what's in your timeline, Daydream asks about these before exporting:
+
+- **Graphics resolution** (1080p or 4K): the size titles and overlays are rendered at. Captions are rendered at up to 1080p.
+- **Keep color grade & effects** (on by default): renders each clip that has a color grade or effects into a new video file with them applied. Turn it off to send your original footage without them, for example when a colorist is grading it in Resolve.
+
+The dialog shows how many clips will be rendered, and estimates the disk space and time it needs.
+
+## What stays editable and what's rendered
+
+| Stays editable in the other editor | Rendered into new video files |
+|---|---|
+| Cuts and trims | Color grades |
+| Position, scale and crop | Captions and graphics, with a transparent background |
+| Opacity | Background blur, removal and other cutout effects |
+| Audio levels | Effects and custom effects on clips |
+| Speed changes | Transitions and effects that move with the music |
+
+Grades, cutout effects and clip effects are only rendered when **Keep color grade & effects** is on. Turn it off and those clips come across as your original footage.
+
+Graded and effected clips are replaced with rendered copies that keep 5 seconds of extra footage on each side, so you can still trim them. Transitions and beat effects go on a new track above the original clip, and the original stays underneath so you can still edit it. Motion blur, window frames and effects applied over the whole frame aren't included.
+
+## Open it in your editor
+
+**Premiere Pro:** choose **File > Import** and select the `.xml` file.
+
+**DaVinci Resolve:** choose **File > Import > Timeline** and select the `.xml` file.
+
+**Final Cut Pro:** choose **File > Import > XML** and select the `.fcpxml` file.
+
+**CapCut:** the project appears in CapCut's project list. CapCut sometimes can't open files from where they're saved. If Daydream warns that files may need relinking, open the project in CapCut and use its relink prompt to find them.
+
+For Premiere Pro, Resolve and Final Cut Pro, rendered files are saved in a folder next to the XML, named after it with `_assets` on the end. Keep that folder next to the XML, and don't save to a temporary folder.
+
+## Bring a timeline into Daydream
+
+To go the other way, choose **File > Import Timeline from XML…** and pick an XML file from Premiere Pro or DaVinci Resolve. If your project already has clips, Daydream asks whether to replace the timeline or import into a new project.
+
+Nested and multicam sequences need to be flattened in your editor first. After import, Daydream lists anything it couldn't bring over exactly, like reversed clips or media it needs you to relink.
+
+## Good to know
+
+- Rendering grades and graphics uses disk space. Daydream warns you if you're running low.
+- On Windows, rendering titles and graphics is much slower than on a Mac.
+
+## Related pages
+
+- [Export a video](/finish/export)
+- [Color grade your footage](/style/color-grading)
+- [Troubleshooting](/help/troubleshooting)
