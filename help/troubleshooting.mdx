@@ -1,0 +1,164 @@
+---
+title: "Troubleshooting Daydream"
+sidebarTitle: "Troubleshooting"
+description: "Fixes for the problems people hit most in Daydream, listed by the exact message you see: connecting Claude or ChatGPT, limits, missing files, imports, exports and updates."
+---
+
+Find the message you're seeing below. Each one says what causes it and what to do. If you're still stuck, [contact support](#contact-support).
+
+## Connecting Claude or ChatGPT
+
+If the card in **Agents** doesn't say **Connected**, see [connect Claude or ChatGPT](/connect-claude-chatgpt#if-the-card-doesnt-say-connected), which covers every status message.
+
+### Daydream's editing tools didn't connect
+
+The AI is signed in but can't reach Daydream. On Windows, antivirus software is usually blocking the local connection, most often Avast, AVG or Norton. Add `127.0.0.1` to its exclusions and restart Daydream.
+
+### Fable 5.2 requires Claude Code v2.1.290 or later
+
+Newer models need a newer version of Claude Code (or Codex for ChatGPT models) than you have installed. Daydream updates it automatically, so quit and reopen Daydream. You can pick a different model in the meantime.
+
+## Limits
+
+### You've hit the usage limit on your Claude plan
+
+This is your Claude or ChatGPT plan's limit, not Daydream's. It resets on that plan's schedule. Until then, try a faster model like Haiku 5.5 or GPT-6 Luna, or switch to your other provider if you have both. See [your Daydream plan vs your Claude or ChatGPT plan](/help/plans-and-limits#your-daydream-plan-vs-your-claude-or-chatgpt-plan).
+
+### You've reached your limit of 100 MCP tool calls this month
+
+This is the free plan's monthly limit on AI actions. You can keep editing by hand, wait for the limit to reset, or upgrade. See [plans and limits](/help/plans-and-limits).
+
+### Transcription limit reached
+
+You've used this month's transcription hours. Upgrade, or wait for the limit to reset.
+
+### You've reached your footage processing limit
+
+You've used this month's footage analysis hours, so new B-roll can't be analyzed yet. You can still import it under **Voiceover / Talking Head** or place it by hand.
+
+### Upgrade Required
+
+Your subscription was cancelled, so features from your paid plan are off. Resubscribe at [daydreamvideo.com/app/manage](https://www.daydreamvideo.com/app/manage).
+
+## Importing and playing footage
+
+### File not found
+
+You moved, renamed or deleted the file, or the drive it's on isn't connected. Right-click it in **Assets** and choose **Locate File…**. See [import your footage](/edit/import-footage#if-a-file-says-file-not-found).
+
+### A file won't import
+
+Daydream supports MP4, MOV, WebM and MKV video, MP3, WAV, M4A, AAC, OGG and FLAC audio, and PNG, JPG, WebP, SVG and GIF images. Convert other formats, like AVI, MTS or MXF, to MP4 first. Folders can't be imported, so drag in the files inside instead.
+
+### Preview unavailable
+
+Daydream tried to make an editing copy of a file your computer can't play directly, like ProRes or HEVC on Windows, and it failed. Check you have free disk space and that the drive with the file is connected, then import it again.
+
+### Can't read this clip's audio
+
+The audio is in a format Daydream can't decode. iPhone videos recorded with Spatial Audio are the usual cause. Convert the file, or turn off Spatial Audio on your iPhone for future recordings.
+
+### Playback stutters
+
+Large 4K files and long clips can play unevenly. Turn on **File > Use Proxy Media** to edit with smaller copies. Graphics with video inside them also slow playback down.
+
+## Transcription and B-roll
+
+### Couldn't transcribe this clip
+
+Usually the file is missing, the drive it's on was unplugged, or it's a cloud file that hasn't downloaded to your computer. Make sure the file is on your computer, then transcribe again.
+
+### Analysis failed
+
+B-roll analysis couldn't finish for a clip. Click retry on the clip in **Assets**. Daydream only analyzes the first 60 minutes of a video, so very long files are cut short. The clip still works on the timeline either way.
+
+## Export problems
+
+### Can't export yet
+
+Some files in your timeline were moved, renamed or deleted. Relink them with **Locate File…** in **Assets**, then export again. If it says clips point to videos no longer in your library, delete those clips from the timeline.
+
+### Daydream can't export this file in its current format
+
+One of your source files can't be decoded for export. Convert it to H.264 MP4. On a Mac, open it in QuickTime Player and use **File > Export As**. On Windows, use a free converter like HandBrake. Then import the converted file and replace the clip.
+
+### A clip stopped the export
+
+One clip failed to decode partway through. Remove that clip, or convert its file to H.264 MP4, then try again.
+
+### Daydream couldn't find a working video encoder on this computer
+
+This happens in virtual machines, over remote desktop, and with broken graphics drivers. Update your graphics drivers, or try a lower resolution.
+
+### Insufficient disk space
+
+The export needs more free space than your disk has. Free up space, or choose a smaller resolution.
+
+### Couldn't save to the export location
+
+Cloud-synced folders, like iCloud Desktop and Documents or Dropbox, and network drives can stop responding partway through an export. Save to a local folder, like Movies, and move the file afterwards.
+
+### The export name you chose is a file in your timeline
+
+Exporting would overwrite one of your source files. Choose a different name or folder.
+
+### Timeline too long
+
+Exports can be up to 2 hours long. Shorten the edit, or split it into parts.
+
+### Video frames could not be captured
+
+Your graphics processor crashed during the export. Try exporting again. If it keeps happening, restart your computer and close other apps that use the graphics card.
+
+### Another export is already running
+
+Only one export runs at a time. Wait for the current one to finish.
+
+### Couldn't apply a cutout effect
+
+Usually the clip now starts before the frame its cutout was picked on, often after trimming its start. Ask the AI to pick the subject again on the clip's first frame, or trim the clip to start later.
+
+## Saving and projects
+
+### Where are my projects saved?
+
+Projects are saved as `.daydream` files every 30 seconds while you work, and whenever you press **Cmd+S** (**Ctrl+S**). By default they're in:
+
+- Mac: `~/Library/Application Support/Daydream/projects`
+- Windows: `%LOCALAPPDATA%\Daydream\projects` (older installs: `%APPDATA%\Daydream\projects`)
+
+Your video files aren't copied into the project. They stay where they are on your computer.
+
+To make a copy of a project, right-click its tab and choose **Duplicate**.
+
+### Autosave failed: your device is out of disk space
+
+Daydream couldn't save your latest changes. Your last save is safe. Free up space and the next autosave picks up where it left off. Deleting proxy files (**File > Delete Proxy Files**) is a quick way to get space back.
+
+## Updates
+
+### Update Can't Install Automatically
+
+Click **Download Latest Version** to get the installer from our website, then install it over your current version. Your projects and settings stay as they are.
+
+### Daydream needs to move to the Applications folder
+
+On a Mac, Daydream has to be in Applications to update. Let it move itself.
+
+## Crashes
+
+### Daydream stopped responding
+
+Reload when asked. Your project was autosaved, so you'll lose at most the last few seconds of work. If you see **Daydream keeps crashing**, quit, reopen it, and [contact support](#contact-support) if it continues.
+
+### Your device may be unsupported
+
+Daydream needs a Mac with Apple silicon or an Intel Mac from 2016 or later, with WebGL 2 support. See [system requirements](/install#system-requirements).
+
+## Contact support
+
+Email [support@daydreamvideo.com](mailto:support@daydreamvideo.com) and include:
+
+- your computer (Mac or Windows) and its system version
+- your Daydream version, from **Daydream > About Daydream**
+- what you were doing and the exact message you saw, or a screenshot

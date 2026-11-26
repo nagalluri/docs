@@ -1,0 +1,64 @@
+---
+title: "How to connect Daydream to other AI tools over MCP"
+sidebarTitle: "Connect other AI tools"
+description: "Control Daydream from Claude Code, Codex, Cursor or any MCP client through Daydream's local MCP server, including editing several projects at once."
+---
+
+Daydream runs a local MCP server, so AI tools outside the app can edit your projects too. If you already use Claude Code or Codex in a terminal, or Cursor or another MCP client, you can point it at Daydream and edit from there. You don't need this to use the chat inside Daydream.
+
+The server runs at `http://127.0.0.1:7433/mcp`. It only accepts connections from your own computer, and it only works while Daydream is open with a project loaded.
+
+## Claude Code and Codex
+
+Daydream registers itself with Claude Code and Codex automatically each time it starts, so in most cases there's nothing to do. Open a terminal, start `claude` or `codex`, and ask it to edit your open project.
+
+To turn this off, or to check it's on, open **Agents** in the top bar, pick the **Claude** or **ChatGPT** tab, and find **MCP integration in Terminal**. The switch is labelled **Auto-register with Claude Code CLI** (or **Codex CLI**).
+
+To register by hand instead, run this while Daydream is open:
+
+<Tabs>
+  <Tab title="Claude Code">
+    ```bash
+    claude mcp add daydream --transport http http://127.0.0.1:7433/mcp --scope user
+    ```
+  </Tab>
+  <Tab title="Codex">
+    ```bash
+    codex mcp add daydream --url http://127.0.0.1:7433/mcp
+    ```
+  </Tab>
+</Tabs>
+
+To remove it later, run `claude mcp remove daydream --scope user` or `codex mcp remove daydream`.
+
+## Cursor and other MCP clients
+
+Any client that supports MCP over HTTP can connect. Add a server named `daydream` with the URL `http://127.0.0.1:7433/mcp`, and keep Daydream open while you use it.
+
+## What an external tool can do
+
+The same things the chat inside Daydream can: transcript cuts, B-roll, captions, graphics, color, effects, audio and export. Your edits show up in the Daydream window as they happen, and you can undo them there.
+
+Your saved preferences and recipes apply here too. If the tool suggests saving a new preference or recipe, Daydream shows the card in the app for you to approve.
+
+## Work on several projects at once
+
+An external tool can open, create and close projects, and edit a project in a background tab without taking over the one you're looking at. That's useful for batch work, like "make a vertical cut of each of these five projects". Only one export runs at a time, so the tool waits for each export to finish before starting the next.
+
+## Usage
+
+Tool calls from external tools count toward the same monthly limit as the in-app chat. See [plans and limits](/help/plans-and-limits).
+
+## If it can't connect
+
+- Make sure Daydream is open and a project is loaded. The server stops when you quit.
+- Check the address is exactly `http://127.0.0.1:7433/mcp`.
+- If you see "Daydream renderer not ready", open a project in Daydream and try again.
+- If you have two copies of Daydream open, quit one. Only one copy can run the server.
+- On Windows, antivirus software (Avast, AVG and Norton especially) can block the connection. Add `127.0.0.1` to its exclusions.
+
+## Related pages
+
+- [How to work with the AI](/ai/work-with-the-ai)
+- [Connect Claude or ChatGPT](/connect-claude-chatgpt)
+- [Create recipes](/automate/recipes)

@@ -1,0 +1,76 @@
+---
+title: "How to add captions and subtitles to a video automatically"
+sidebarTitle: "Add captions"
+description: "Generate captions from your transcript in Daydream, choose how they split into lines, highlight the spoken word, and ask Claude or ChatGPT to design a custom animated style."
+---
+
+To add captions in Daydream, transcribe your video, then click the captions button in the timeline toolbar or ask the AI to "add captions". Daydream builds them from your transcript, timed word by word, on their own **CC** track. The same steps work for subtitles.
+
+## Generate captions
+
+You need a transcript first (see [edit by transcript](/edit/remove-silences)). Then either:
+
+- click the captions button in the timeline toolbar (its tooltip says **Generate captions from transcript**), or
+- ask the AI:
+
+> Add captions.
+
+> Add captions, one sentence per line.
+
+> Add captions, three words at a time.
+
+By default, each caption holds up to 6 words. You can ask for full sentences, splits at natural pauses like commas, or any number of words.
+
+If you cut more of the video after adding captions, ask the AI to "regenerate the captions", or use the regenerate button in the timeline toolbar (**Regenerate captions from current transcript**). Regenerating rebuilds every caption from the current transcript, so text you edited on individual captions is replaced.
+
+## Change how captions look
+
+Every caption in a project shares one style. Select any caption and open **Properties** to change it:
+
+| Setting | What it does |
+|---|---|
+| **Font**, **Font size**, **Weight** | The typeface, from 12 to 200 px, regular to extra bold |
+| **Text color**, **Outline color** | The words and the outline around them |
+| **Active word color** | Highlights each word as it's spoken |
+| **Distance from bottom** | How high the captions sit |
+| **Fade duration** | How quickly each caption fades in and out |
+
+The built-in fonts are Inter, Montserrat, Poppins, Playfair Display, Bebas Neue, Oswald and JetBrains Mono. Fonts installed on your computer are listed under **System Fonts**. The built-in fonts load from the internet, so you need a connection the first time you use them.
+
+To move or resize captions, drag them in the preview. With **Apply to all captions** on, moving one moves them all.
+
+## Design a custom style with AI
+
+For anything the settings don't cover, describe the look:
+
+> One word at a time, big and bold, with each word popping in.
+
+> White text on a black pill, with the current word in yellow.
+
+> Podcast-clip captions: big, centered, two lines at most, with a soft shadow.
+
+The AI writes a custom caption style for your project, with its own animation. Ask for changes the same way ("smaller", "less bounce", "move them higher").
+
+{/* Visual: loops of the default caption style and two or three custom styles, same clip each time */}
+
+To reuse a style in other projects, save it. See [save caption styles and graphics](/automate/saved-styles).
+
+## Edit caption text
+
+Select a caption and change its text in **Properties**. If the number of words stays the same, each word keeps its timing. To fix a word across the whole video, ask the AI ("it's spelled Daydream, not Day Dream").
+
+You can also ask the AI to add a caption that isn't in the transcript, like a title card or a note.
+
+## Captions behind you
+
+Captions can sit behind the person in the shot, so your head covers part of the text. Ask for "captions behind me". See [blur your background and put text behind you](/style/background-and-text-behind).
+
+## Captions in exports
+
+MP4 exports include captions as they look in the preview. When you send your edit to Premiere Pro, DaVinci Resolve, Final Cut Pro or CapCut, captions come across as video clips with a transparent background, rendered at up to 1080p.
+
+## Related pages
+
+- [Edit by transcript](/edit/remove-silences)
+- [Save caption styles and graphics](/automate/saved-styles)
+- [Add motion graphics](/style/motion-graphics)

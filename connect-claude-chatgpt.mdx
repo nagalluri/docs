@@ -1,0 +1,60 @@
+---
+title: "How to connect Claude or ChatGPT to Daydream"
+sidebarTitle: "Connect Claude or ChatGPT"
+description: "Sign in with your Claude or ChatGPT account so the AI can edit your videos in Daydream. Setup is automatic, and this page covers what to do if it isn't."
+---
+
+To edit with AI in Daydream, sign in with your Claude or ChatGPT account. Daydream sets up everything else in the background, so the only thing you do is log in. You only need one of the two, but you can connect both and switch between them.
+
+The AI runs on your own subscription. Behind the scenes, Daydream uses Claude Code for Claude and Codex for ChatGPT, and installs and updates them for you, so you don't need to install anything yourself.
+
+{/* Visual: still of the Agent settings window with Claude showing Connected */}
+
+## Connect your account
+
+1. The first time you open Daydream, the **Welcome to Daydream** window lists **Claude** and **ChatGPT**. Later, you can open the same cards from **Agents** in the top bar.
+2. Click **Log in** next to the one you use. If you see **Setting up…** with a percentage, Daydream is still downloading what it needs. Wait for it to finish.
+3. Your browser opens. Sign in to your Claude or ChatGPT account there.
+4. Claude sometimes shows a code in the browser. If it does, paste it into **Paste your login code here, if asked** in Daydream and click **Submit**.
+5. The card changes to **Connected** and shows your account and plan. Click **Get Started**.
+
+Work and team accounts (Claude Team or Enterprise, ChatGPT Business or Enterprise) work too. Sign in with your work email.
+
+## Switch accounts or providers
+
+To use a different account, open **Agents** in the top bar and click **Switch account** on the card.
+
+To switch between Claude and ChatGPT, start a new chat and pick a model from the other provider. A single chat stays with one provider, so the model menu asks you to **Start a new chat to switch providers**. [How to work with the AI](/ai/work-with-the-ai) explains how to choose a model.
+
+## If the card doesn't say Connected
+
+| What the card says | What to do |
+|---|---|
+| **Setting up…** for a long time | Check your internet connection. Corporate networks and VPNs sometimes block the download. Restart Daydream to try again, or [set it up manually](#set-it-up-manually). |
+| **Couldn't set this up automatically.** | Click **Retry**. If it fails again, click **Set it up manually**, or follow [set it up manually](#set-it-up-manually) below. |
+| **Complete the sign-in in your browser…** and nothing happens | Finish signing in in the browser tab that opened, then click back into Daydream. It checks again when the window gets focus. |
+| **Login didn't complete.** | Click **Show details** to see why, then click **Try again**. |
+| **Your session expired. Sign in again to keep using it.** | Click **Log in** and sign in again. |
+| **This version is too old. Update to continue.** | Click **Update in Terminal**, or quit and reopen Daydream so it can update. |
+| **Couldn't check its status.** | Click **Try again**. If it keeps happening, quit and reopen Daydream, or log in again. |
+
+If chat says **Connect an agent to start editing...**, none of your accounts are connected yet. Open **Agents** and log in.
+
+## Daydream's editing tools didn't connect (Windows)
+
+If the AI is signed in but says Daydream's editing tools didn't connect, antivirus software is usually blocking the local connection between the AI and Daydream. Avast, AVG and Norton are the usual cause. Add `127.0.0.1` to your antivirus exclusions (often called exceptions or allowed sites), then restart Daydream.
+
+## Set it up manually
+
+If automatic setup can't finish, install the tool yourself and log in once. Daydream finds it on its next start.
+
+- **Claude:** install Claude Code using the [Claude Code quickstart](https://code.claude.com/docs/en/quickstart), then run `claude` in Terminal and log in.
+- **ChatGPT:** install Codex using the [Codex CLI docs](https://developers.openai.com/codex/cli), then run `codex login` in Terminal.
+
+Quit and reopen Daydream. The card should show **Connected**.
+
+## Related pages
+
+- [How to work with the AI](/ai/work-with-the-ai)
+- [Make your first video](/first-video)
+- [Plans and limits](/help/plans-and-limits)

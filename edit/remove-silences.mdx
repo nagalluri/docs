@@ -1,0 +1,79 @@
+---
+title: "How to remove silences, pauses and filler words from a video"
+sidebarTitle: "Edit by transcript"
+description: "Remove silences, bad takes and filler words in Daydream by editing the transcript, either by hand or by asking Claude or ChatGPT to clean it up for you."
+---
+
+In Daydream, you remove silences, pauses and filler words by editing your video's transcript. Delete a word in the text and it's cut from the video. You can do it by hand, or ask Claude or ChatGPT to clean up the whole transcript in one go.
+
+This is also called text-based video editing. It works on anything you've transcribed: talking-head video, voiceovers, podcasts and interviews.
+
+## Transcribe your video first
+
+Import the clip under **Voiceover / Talking Head** (see [import your footage](/edit/import-footage)), then open the **Transcript** panel and click **Transcribe Video**, or **Transcribe Voiceover** for an audio file. The transcript appears in the panel and the clip goes onto your timeline.
+
+Daydream detects the language automatically. Filler words like "um" and "uh" are kept in the transcript so you can cut them.
+
+## Let the AI clean it up
+
+Ask in the chat:
+
+> Cut the silences and any bad takes.
+
+> Remove the ums and uhs, but keep the pacing natural.
+
+> Remove the part where I talk about shipping, from "anyway" to "the next thing".
+
+Unless you tell it otherwise, the AI:
+
+- cuts every pause the transcript shows
+- keeps the last attempt when you said something twice, since restarts are usually the better take
+- cuts false starts, from the first word of the abandoned attempt to where you start again
+- cuts filler words between sentences and phrases, but leaves ones in the middle of a sentence where cutting would sound choppy
+
+If it isn't sure about a section, it leaves it and tells you at the end.
+
+{/* Visual: transcript with removed words struck through and the timeline closing the gaps */}
+
+### Tighter or looser cuts
+
+Each cut leaves a little air on either side so speech doesn't sound clipped. Ask for the pacing you want:
+
+| Ask for | Air left at each cut |
+|---|---|
+| Tight cuts | 2 frames after you stop talking, 1 before you start |
+| Natural (the default) | 3 frames after, 1 before |
+| Relaxed cuts | 5 frames after, 2 before |
+
+You can also give exact numbers: "leave 0.2 seconds before and after each cut." Pacing applies when the cut is made. To change the spacing of cuts you've already made, undo them and ask again with the new pacing.
+
+## Review what was cut
+
+Turn on **Show cuts** at the top of the **Transcript** panel. Removed words stay in the text, struck through, so you can read exactly what's gone. Turn it off to read only what's left.
+
+To bring something back, select the struck-through words and press **Delete** again, or click the restore button that appears over them (**Restore selection**). **Cmd+Z** (**Ctrl+Z** on Windows) undoes the last cut.
+
+## Cut by hand
+
+- Click a word to move the playhead there.
+- Drag across words, or click one and Shift-click another, to select a range. **Cmd**-click (**Ctrl**-click on Windows) adds or removes single words.
+- Press **Delete** or **Backspace**, or click the scissors button that appears over the selection (**Delete selection**), to cut. The clip trims itself on the timeline and everything after it moves up to close the gap.
+
+Silences of about a third of a second or longer show up in the text as a length in brackets, like `[1.2s]`. Select and delete them like words.
+
+**Cmd+A** (**Ctrl+A**) selects every word in a block, and **Esc** clears the selection.
+
+## More than one transcribed clip
+
+Each transcribed clip gets its own block in the **Transcript** panel. If clips sit on more than one track, tabs like **V1/A1** and **V2/A2** appear at the top so you can switch between them. Cuts only affect the clip whose transcript you edit.
+
+## Limits
+
+- Transcripts don't label who's speaking.
+- To delete a whole clip and its transcript, use the trash icon on its block.
+
+## Related pages
+
+- [Mix your sound](/edit/mix-sound), for lowering breaths instead of cutting them
+- [Add B-roll](/edit/add-b-roll)
+- [Add captions](/style/captions)

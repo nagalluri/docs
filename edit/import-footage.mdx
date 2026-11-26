@@ -1,0 +1,60 @@
+---
+title: "How to import footage into Daydream"
+sidebarTitle: "Import your footage"
+description: "Import video, audio and images into Daydream, choose which files get transcribed and which the AI watches for B-roll, and relink files you've moved."
+---
+
+To import footage, click **Import** in the **Assets** panel, drag files onto the panel, or press **Cmd+I** (**Ctrl+I** on Windows). Daydream then asks which box each file goes in, and that choice decides what it does with the file.
+
+{/* Visual: still of the import window with both boxes, a talking-head clip in the top one and B-roll in the bottom one */}
+
+## Which box should a file go in?
+
+| Box | What Daydream does | Put here |
+|---|---|---|
+| **Voiceover / Talking Head** | Transcribes it, so you and the AI can edit it by its words | Anything where the words matter: you on camera, a voiceover, a podcast, an interview |
+| **Footage / Images / Music** | The AI watches video clips in the background and writes down what's in them, so it can find shots when you ask | B-roll, cutaways, screen recordings without narration, photos, logos, music |
+
+A clip can only go in one box. If it has speech you want to edit, use **Voiceover / Talking Head**, even if it's also nice footage.
+
+Analyzing B-roll takes a little while after import, and you can keep editing while it runs. Each clip shows its progress in the **Assets** panel. Daydream can analyze videos up to 60 minutes long. Trim longer ones first. The free plan includes 1 hour of footage analysis a month. See [plans and limits](/help/plans-and-limits).
+
+## Supported files
+
+| Type | Formats |
+|---|---|
+| Video | MP4, MOV, WebM, MKV |
+| Audio | MP3, WAV, M4A, AAC, OGG, FLAC |
+| Images | PNG, JPG, WebP, SVG, GIF |
+
+Formats like AVI, WMV, MTS, MXF and MPG aren't supported yet. Convert them to MP4 first. You can't import a whole folder at once either, so open the folder and drag in the files.
+
+Some files play in other apps but not in Daydream's editor, like ProRes on some machines or HEVC on Windows. Daydream handles these for you by making an editing copy in the background. Your export still uses the original file.
+
+## Find things in your library
+
+Your library is shared across projects, so footage you imported for one video is there for the next.
+
+- Switch between **This project** and **All assets** to see one project's files or everything.
+- Filter by **Video**, **Audio** or **Images**, search by name, and sort by date, name, length or size.
+- Drag a file onto the timeline to use it, or ask the AI to.
+
+Deleting a file from the library also removes its clips from your timelines, and Daydream tells you how many before it does.
+
+## If a file says "File not found"
+
+Daydream uses your files where they are on your computer. It doesn't copy them. If you move, rename or delete a file, or unplug the drive it's on, its clips go offline.
+
+To fix it, right-click the file in **Assets** and choose **Locate File…** to point Daydream at its new location. If you moved a whole folder, locating one file is usually enough, because Daydream finds the other missing files in the same folder.
+
+You can also tell the AI where the file went ("I moved my footage to the Episode 2 folder on my Desktop") and it will relink it.
+
+## Smoother playback with proxy media
+
+If playback stutters with large 4K files, turn on **File > Use Proxy Media**. Daydream makes smaller copies for editing and switches back to your originals for export. It takes a while to create them, and Daydream shows an estimate before it starts. To free up the space later, choose **File > Delete Proxy Files**.
+
+## Related pages
+
+- [Remove silences, pauses and filler words](/edit/remove-silences)
+- [Add B-roll](/edit/add-b-roll)
+- [Troubleshooting](/help/troubleshooting)
