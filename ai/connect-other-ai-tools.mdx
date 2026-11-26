@@ -16,18 +16,15 @@ To turn this off, or to check it's on, open **Agents** in the top bar, pick the 
 
 To register by hand instead, run this while Daydream is open:
 
-<Tabs>
-  <Tab title="Claude Code">
-    ```bash
-    claude mcp add daydream --transport http http://127.0.0.1:7433/mcp --scope user
-    ```
-  </Tab>
-  <Tab title="Codex">
-    ```bash
-    codex mcp add daydream --url http://127.0.0.1:7433/mcp
-    ```
-  </Tab>
-</Tabs>
+<CodeGroup>
+```bash Claude Code
+claude mcp add daydream --transport http http://127.0.0.1:7433/mcp --scope user
+```
+
+```bash Codex
+codex mcp add daydream --url http://127.0.0.1:7433/mcp
+```
+</CodeGroup>
 
 To remove it later, run `claude mcp remove daydream --scope user` or `codex mcp remove daydream`.
 

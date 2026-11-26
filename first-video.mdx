@@ -38,7 +38,9 @@ You'll need Daydream [installed](/install) with [Claude or ChatGPT connected](/c
   <Step title="Cut the silences and bad takes">
     In the chat on the right, ask:
 
-    > Cut the silences and any bad takes.
+    <Prompt description={"Cut the silences and any bad takes."} actions={["copy"]}>
+    Cut the silences and any bad takes.
+    </Prompt>
 
     Watch the timeline while the AI works. It reads the transcript, removes the pauses, keeps the last attempt of anything you said twice, and closes the gaps.
 
@@ -51,7 +53,9 @@ You'll need Daydream [installed](/install) with [Claude or ChatGPT connected](/c
   <Step title="Add B-roll">
     Ask for B-roll the way you'd describe it to a person:
 
-    > Add B-roll over the part where I talk about my morning routine.
+    <Prompt description={"Add B-roll over the part where I talk about my morning routine."} actions={["copy"]}>
+    Add B-roll over the part where I talk about my morning routine.
+    </Prompt>
 
     The AI picks shots from the footage you imported and places them on the track above your talking-head clip. If you want a different shot, say which one ("use the coffee shot instead").
   </Step>
@@ -70,7 +74,7 @@ You'll need Daydream [installed](/install) with [Claude or ChatGPT connected](/c
 </Steps>
 
 <Frame caption="The finished video: silences and bad takes cut, B-roll added, captions on.">
-  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/result-first-video.mp4" aria-label="The finished video: silences and bad takes cut, B-roll added, captions on."></video>
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/result-first-video.mp4#t=0.1" aria-label="The finished video: silences and bad takes cut, B-roll added, captions on."></video>
 </Frame>
 
 That's a finished video. From here, most people tweak by asking for small changes ("tighten the pacing in the first 10 seconds", "zoom in when I say the price") and fixing the odd thing by hand.

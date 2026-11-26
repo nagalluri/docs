@@ -24,6 +24,15 @@ Task pages follow the same shape: answer in the first sentence, 2 to 3 example p
 
 Every page has `title` (the search title, how people ask, 50 to 60 characters where possible), `sidebarTitle` (short, the sidebar label) and `description` (130 to 160 characters, active voice, names Claude and ChatGPT where it fits).
 
+## Components
+
+- Every example prompt is a `<Prompt description={"..."} actions={["copy"]}>` with the same text as children, so readers can copy it. Four or more in a row go in `<Columns cols={2}>`. Never a blockquote.
+- Numbered procedures use `<Steps>`. Mac vs Windows, Claude vs ChatGPT, or one editor vs another use `<Tabs>`. The same command for several tools uses `<CodeGroup>`.
+- `<Warning>` only for things that lose work or can't be undone, `<Tip>` for a fix people won't find on their own, `<Note>` for context, `<Info>` for plan requirements. At most two callouts on a page.
+- Plan-gated pages show `<Badge>` for the plans that include them.
+- Troubleshooting entries are `<Accordion>`s inside an `<AccordionGroup>` under each area's H2. Titles are the exact message.
+- Media goes in `<Frame caption="...">`. Muted loops: `autoPlay muted loop playsInline`. Anything with sound: `controls`.
+
 ## Voice
 
 Model it on Nag's blog posts (daydreamvideo.com/blog). Answer first. Contractions. Casual where it's natural, concrete always: real prompts in quotes, real menu paths. Say why, then what to do. Admit limits plainly. "You" for the reader, "we" only for things we built or tested.

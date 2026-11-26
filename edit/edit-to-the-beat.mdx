@@ -11,16 +11,22 @@ To edit a video to the beat in Daydream, put a song on the timeline and ask the 
 1. Import your clips and your song. Put the song on an audio track.
 2. Ask:
 
-> Cut these clips to the beat, one shot per beat.
+<Prompt description={"Cut these clips to the beat, one shot per beat."} actions={["copy"]}>
+Cut these clips to the beat, one shot per beat.
+</Prompt>
 
-> Make a montage from my Japan clips, a new shot every bar, and save the best shot for the drop.
+<Prompt description={"Make a montage from my Japan clips, a new shot every bar, and save the best shot for the drop."} actions={["copy"]}>
+Make a montage from my Japan clips, a new shot every bar, and save the best shot for the drop.
+</Prompt>
 
-> Cut to the beat for the first 15 seconds, then slow down to one shot every two bars.
+<Prompt description={"Cut to the beat for the first 15 seconds, then slow down to one shot every two bars."} actions={["copy"]}>
+Cut to the beat for the first 15 seconds, then slow down to one shot every two bars.
+</Prompt>
 
 The AI lays the clips edge to edge, each starting and ending on a beat, and starts the first shot at the very beginning so the video doesn't open on black.
 
 <Frame caption="A montage cut to a 130 BPM track: one shot per bar, then one per beat after the drop.">
-  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/beat-montage.mp4" aria-label="A montage cut to a 130 BPM track: one shot per bar, then one per beat after the drop."></video>
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/beat-montage.mp4#t=0.1" aria-label="A montage cut to a 130 BPM track: one shot per bar, then one per beat after the drop."></video>
 </Frame>
 
 If you move, trim or change the speed of the song afterwards, ask the AI to re-cut. The beats move with the song, but clips you already placed don't.
@@ -39,11 +45,17 @@ To see a song's beats, click **Detect beats** in the same section. It takes a fe
 
 Cuts aren't the only thing that can follow the song:
 
-> Make the title pop on every beat.
+<Prompt description={"Make the title pop on every beat."} actions={["copy"]}>
+Make the title pop on every beat.
+</Prompt>
 
-> Add a quick zoom punch on each beat in the chorus.
+<Prompt description={"Add a quick zoom punch on each beat in the chorus."} actions={["copy"]}>
+Add a quick zoom punch on each beat in the chorus.
+</Prompt>
 
-> Flash the screen white on the drop.
+<Prompt description={"Flash the screen white on the drop."} actions={["copy"]}>
+Flash the screen white on the drop.
+</Prompt>
 
 Effects that pulse or shake with the music are custom effects the AI writes for your project, and animated graphics can be timed to the beats too. See [custom effects and transitions](/style/custom-effects-and-transitions) and [add motion graphics](/style/motion-graphics).
 

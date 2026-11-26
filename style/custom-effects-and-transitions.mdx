@@ -8,13 +8,23 @@ If a look isn't in Daydream's [built-in effects](/style/effects), describe it an
 
 ## Ask for a look
 
-> Make this clip look like an old CRT TV.
+<Columns cols={2}>
+<Prompt description={"Make this clip look like an old CRT TV."} actions={["copy"]}>
+Make this clip look like an old CRT TV.
+</Prompt>
 
-> Add a halftone effect, like a comic book.
+<Prompt description={"Add a halftone effect, like a comic book."} actions={["copy"]}>
+Add a halftone effect, like a comic book.
+</Prompt>
 
-> Give the intro a chromatic aberration glitch that gets stronger toward the end.
+<Prompt description={"Give the intro a chromatic aberration glitch that gets stronger toward the end."} actions={["copy"]}>
+Give the intro a chromatic aberration glitch that gets stronger toward the end.
+</Prompt>
 
-> Turn the B-roll into pixel art.
+<Prompt description={"Turn the B-roll into pixel art."} actions={["copy"]}>
+Turn the B-roll into pixel art.
+</Prompt>
+</Columns>
 
 <Columns cols={2}>
 <Frame caption="Make this clip look like an old CRT TV.">
@@ -31,9 +41,13 @@ The AI writes the effect, checks that it runs smoothly on your computer, and app
 
 Custom effects come with settings the AI can tune, like strength, color or size:
 
-> Make the scanlines thinner and less dark.
+<Prompt description={"Make the scanlines thinner and less dark."} actions={["copy"]}>
+Make the scanlines thinner and less dark.
+</Prompt>
 
-> Change the halftone dots to pink.
+<Prompt description={"Change the halftone dots to pink."} actions={["copy"]}>
+Change the halftone dots to pink.
+</Prompt>
 
 You can also ask to change how it works ("make it flicker less") and the AI edits the effect. Every clip using it updates at once, and it's one undo step.
 
@@ -41,9 +55,13 @@ You can also ask to change how it works ("make it flicker less") and the AI edit
 
 Custom effects can use the same cutout as [background blur](/style/background-and-text-behind), so they can affect one part of the frame:
 
-> Add grain only to the background, not to me.
+<Prompt description={"Add grain only to the background, not to me."} actions={["copy"]}>
+Add grain only to the background, not to me.
+</Prompt>
 
-> Wash the background in blue and keep me in normal color.
+<Prompt description={"Wash the background in blue and keep me in normal color."} actions={["copy"]}>
+Wash the background in blue and keep me in normal color.
+</Prompt>
 
 The first time an effect like this runs on a clip, Daydream analyzes the clip to find you, which takes about 2 minutes per minute of footage.
 
@@ -51,11 +69,17 @@ The first time an effect like this runs on a clip, Daydream analyzes the clip to
 
 Daydream doesn't have a transitions menu, but the AI can make any transition you can describe:
 
-> Add a whip-pan transition between these two clips.
+<Prompt description={"Add a whip-pan transition between these two clips."} actions={["copy"]}>
+Add a whip-pan transition between these two clips.
+</Prompt>
 
-> Make an ink-bleed transition into the B-roll.
+<Prompt description={"Make an ink-bleed transition into the B-roll."} actions={["copy"]}>
+Make an ink-bleed transition into the B-roll.
+</Prompt>
 
-> Use a glitch transition between every cut in the montage.
+<Prompt description={"Use a glitch transition between every cut in the montage."} actions={["copy"]}>
+Use a glitch transition between every cut in the montage.
+</Prompt>
 
 To build a transition, the AI overlaps the next clip with the current one on the track above and blends between them. For a plain fade, it uses opacity instead, as described in [add zooms and camera moves](/style/zoom-effects#fades-and-crossfades).
 
@@ -67,14 +91,20 @@ To build a transition, the AI overlaps the next clip with the current one on the
 
 Custom effects can react to the song on your timeline: hitting on every beat, or growing with how loud the music is.
 
-> Add a zoom punch on every beat.
+<Prompt description={"Add a zoom punch on every beat."} actions={["copy"]}>
+Add a zoom punch on every beat.
+</Prompt>
 
-> Make the background glow pulse with the music.
+<Prompt description={"Make the background glow pulse with the music."} actions={["copy"]}>
+Make the background glow pulse with the music.
+</Prompt>
 
-> Flash and shake the frame on the drop.
+<Prompt description={"Flash and shake the frame on the drop."} actions={["copy"]}>
+Flash and shake the frame on the drop.
+</Prompt>
 
 <Frame caption="A zoom punch and flash on every beat, written as a custom effect.">
-  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/custom-beat-pulse.mp4" aria-label="A zoom punch and flash on every beat, written as a custom effect."></video>
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" style={{ maxWidth: '320px', margin: '0 auto' }} src="/images/guide/custom-beat-pulse.mp4#t=0.1" aria-label="A zoom punch and flash on every beat, written as a custom effect."></video>
 </Frame>
 
 See [edit to the beat](/edit/edit-to-the-beat) for how Daydream finds the beats.

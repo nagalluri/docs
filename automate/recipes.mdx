@@ -6,11 +6,19 @@ description: "Save an editing routine as a recipe in Daydream, then run it on an
 
 A recipe is an editing routine you save once and run by name on future videos. If you make the same kind of video every week, save the steps as a recipe ("cut tight, add B-roll every sentence, Bold Yellow captions, my outro") and next time just say "make this a Weekly Short".
 
+<Badge color="blue">Creator</Badge> <Badge color="purple">Pro</Badge>
+
+<Info>
+Recipes are part of the Creator and Pro plans. Creator saves 1, Pro has no plan limit. See [plans and limits](/help/plans-and-limits).
+</Info>
+
 ## Save a recipe
 
 The easiest way is after you've finished an edit you like:
 
-> Save what we just did as a recipe called Weekly Short.
+<Prompt description={"Save what we just did as a recipe called Weekly Short."} actions={["copy"]}>
+Save what we just did as a recipe called Weekly Short.
+</Prompt>
 
 The AI writes up the steps from your conversation and the finished timeline, and shows a card asking **Save this as a recipe?** with the instructions and any saved caption styles or graphics it uses. Read it over, then click **Save recipe**. If something's missing, tell the AI before saving ("also add a zoom on every hook").
 
@@ -26,9 +34,13 @@ You can also write one yourself: open **Memory**, go to **Recipes**, click **New
 
 In a new project, import and transcribe your footage, then ask:
 
-> Make this a Weekly Short.
+<Prompt description={"Make this a Weekly Short."} actions={["copy"]}>
+Make this a Weekly Short.
+</Prompt>
 
-> Run my podcast clip recipe on this video.
+<Prompt description={"Run my podcast clip recipe on this video."} actions={["copy"]}>
+Run my podcast clip recipe on this video.
+</Prompt>
 
 The AI reads the recipe, tells you briefly what it's applying, and works through it. It uses the saved caption styles and graphics the recipe names, exactly as saved.
 

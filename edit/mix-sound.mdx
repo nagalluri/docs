@@ -8,22 +8,34 @@ To lower music under your voice in Daydream, ask the AI ("put the music 12 dB un
 
 ## Ask the AI
 
-> Put the music 12 dB under my voice.
+<Columns cols={2}>
+<Prompt description={"Put the music 12 dB under my voice."} actions={["copy"]}>
+Put the music 12 dB under my voice.
+</Prompt>
 
-> Lower the music while I'm talking and bring it back up in the gaps.
+<Prompt description={"Lower the music while I'm talking and bring it back up in the gaps."} actions={["copy"]}>
+Lower the music while I'm talking and bring it back up in the gaps.
+</Prompt>
 
-> Clean up the breathing sounds in my voiceover.
+<Prompt description={"Clean up the breathing sounds in my voiceover."} actions={["copy"]}>
+Clean up the breathing sounds in my voiceover.
+</Prompt>
 
-> Fade the music out over the last 3 seconds.
+<Prompt description={"Fade the music out over the last 3 seconds."} actions={["copy"]}>
+Fade the music out over the last 3 seconds.
+</Prompt>
 
-> The B-roll at 0:30 is too loud. Turn it down.
+<Prompt description={"The B-roll at 0:30 is too loud. Turn it down."} actions={["copy"]}>
+The B-roll at 0:30 is too loud. Turn it down.
+</Prompt>
+</Columns>
 
 <Columns cols={2}>
 <Frame caption="Before: music at full volume.">
-  <video controls playsInline preload="metadata" className="w-full rounded-xl" src="/images/guide/mix-before.mp4" aria-label="Before: music at full volume."></video>
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" src="/images/guide/mix-before.mp4#t=0.1" aria-label="Before: music at full volume."></video>
 </Frame>
 <Frame caption="After: music 14 dB under the voice.">
-  <video controls playsInline preload="metadata" className="w-full rounded-xl" src="/images/guide/mix-after.mp4" aria-label="After: music 14 dB under the voice."></video>
+  <video controls playsInline preload="metadata" className="w-full rounded-xl" src="/images/guide/mix-after.mp4#t=0.1" aria-label="After: music 14 dB under the voice."></video>
 </Frame>
 </Columns>
 

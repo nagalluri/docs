@@ -10,21 +10,37 @@ To color grade in Daydream, select your clip and describe what you want: "fix th
 
 Color correction fixes problems from the shoot, like exposure or white balance, so the footage looks natural and consistent. Color grading comes after and gives it a look or a mood. Ask for them in that order.
 
-> Fix the white balance.
+<Prompt description={"Fix the white balance."} actions={["copy"]}>
+Fix the white balance.
+</Prompt>
 
-> My face is underexposed. Brighten it up without blowing out the window.
+<Prompt description={"My face is underexposed. Brighten it up without blowing out the window."} actions={["copy"]}>
+My face is underexposed. Brighten it up without blowing out the window.
+</Prompt>
 
-> Remove the green cast.
+<Prompt description={"Remove the green cast."} actions={["copy"]}>
+Remove the green cast.
+</Prompt>
 
 Then:
 
-> Give it a warm, filmic look.
+<Columns cols={2}>
+<Prompt description={"Give it a warm, filmic look."} actions={["copy"]}>
+Give it a warm, filmic look.
+</Prompt>
 
-> Teal shadows and orange highlights, but keep my skin natural.
+<Prompt description={"Teal shadows and orange highlights, but keep my skin natural."} actions={["copy"]}>
+Teal shadows and orange highlights, but keep my skin natural.
+</Prompt>
 
-> Make the greens greener.
+<Prompt description={"Make the greens greener."} actions={["copy"]}>
+Make the greens greener.
+</Prompt>
 
-> Desaturate the yellows in this clip.
+<Prompt description={"Desaturate the yellows in this clip."} actions={["copy"]}>
+Desaturate the yellows in this clip.
+</Prompt>
+</Columns>
 
 <Frame caption="Before and after asking for a warm, filmic look.">
   <img src="/images/guide/color-before-after-warm.jpg" alt="The same frame before and after a warm, filmic grade" style={{ maxWidth: '540px', margin: '0 auto' }} />
@@ -61,9 +77,13 @@ If you have a conversion LUT made for log footage, like "S-Log3 to Rec.709", say
 
 ## Match clips and grade a whole video
 
-> Match the color of this clip to the one before it.
+<Prompt description={"Match the color of this clip to the one before it."} actions={["copy"]}>
+Match the color of this clip to the one before it.
+</Prompt>
 
-> Apply this look to every clip.
+<Prompt description={"Apply this look to every clip."} actions={["copy"]}>
+Apply this look to every clip.
+</Prompt>
 
 Grades belong to each clip, so when you apply one look across a video, every clip keeps its own camera profile and only the look is shared. To match two clips, the AI compares their scopes and moves one toward the other.
 

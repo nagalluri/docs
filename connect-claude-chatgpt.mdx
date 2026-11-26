@@ -14,11 +14,22 @@ The AI runs on your own subscription. Behind the scenes, Daydream uses Claude Co
 
 ## Connect your account
 
-1. The first time you open Daydream, the **Welcome to Daydream** window lists **Claude** and **ChatGPT**. Later, you can open the same cards from **Agents** in the top bar.
-2. Click **Log in** next to the one you use. If you see **Setting up…** with a percentage, Daydream is still downloading what it needs. Wait for it to finish.
-3. Your browser opens. Sign in to your Claude or ChatGPT account there.
-4. Claude sometimes shows a code in the browser. If it does, paste it into **Paste your login code here, if asked** in Daydream and click **Submit**.
-5. The card changes to **Connected** and shows your account and plan. Click **Get Started**.
+<Steps>
+  <Step title="Open the Claude or ChatGPT card">
+    The first time you open Daydream, the **Welcome to Daydream** window lists **Claude** and **ChatGPT**. Later, you can open the same cards from **Agents** in the top bar.
+  </Step>
+  <Step title="Click Log in">
+    Click **Log in** next to the one you use. If you see **Setting up…** with a percentage, Daydream is still downloading what it needs. Wait for it to finish.
+  </Step>
+  <Step title="Sign in in your browser">
+    Your browser opens. Sign in to your Claude or ChatGPT account there.
+
+    Claude sometimes shows a code in the browser. If it does, paste it into **Paste your login code here, if asked** in Daydream and click **Submit**.
+  </Step>
+  <Step title="Check that it says Connected">
+    The card changes to **Connected** and shows your account and plan. Click **Get Started**.
+  </Step>
+</Steps>
 
 Work and team accounts (Claude Team or Enterprise, ChatGPT Business or Enterprise) work too. Sign in with your work email.
 
@@ -44,14 +55,22 @@ If chat says **Connect an agent to start editing...**, none of your accounts are
 
 ## Daydream's editing tools didn't connect (Windows)
 
+<Tip>
 If the AI is signed in but says Daydream's editing tools didn't connect, antivirus software is usually blocking the local connection between the AI and Daydream. Avast, AVG and Norton are the usual cause. Add `127.0.0.1` to your antivirus exclusions (often called exceptions or allowed sites), then restart Daydream.
+</Tip>
 
 ## Set it up manually
 
 If automatic setup can't finish, install the tool yourself and log in once. Daydream finds it on its next start.
 
-- **Claude:** install Claude Code using the [Claude Code quickstart](https://code.claude.com/docs/en/quickstart), then run `claude` in Terminal and log in.
-- **ChatGPT:** install Codex using the [Codex CLI docs](https://developers.openai.com/codex/cli), then run `codex login` in Terminal.
+<Tabs>
+  <Tab title="Claude">
+    Install Claude Code using the [Claude Code quickstart](https://code.claude.com/docs/en/quickstart), then run `claude` in Terminal and log in.
+  </Tab>
+  <Tab title="ChatGPT">
+    Install Codex using the [Codex CLI docs](https://developers.openai.com/codex/cli), then run `codex login` in Terminal.
+  </Tab>
+</Tabs>
 
 Quit and reopen Daydream. The card should show **Connected**.
 
